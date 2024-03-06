@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:TPW_DB_DB"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+      
     </Application.Resources>
 </Application>
