@@ -18,6 +18,7 @@ namespace TPW_DB_DB
     /// <summary>
     /// Logika interakcji dla klasy MainWindow.xaml
     /// </summary>
+    
     public partial class MainWindow : Window
     {
         public MainWindow()
