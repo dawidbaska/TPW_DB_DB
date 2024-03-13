@@ -6,7 +6,4 @@
         xmlns:local="clr-namespace:TPW_DB_DB"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-		<Label Name="lbl" Content="dziala" FontSize="150"/>
-    </Grid>
 </Window>
