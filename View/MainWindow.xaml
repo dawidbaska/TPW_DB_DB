@@ -4,13 +4,17 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TPW_DB_DB"
+       xmlns:mw="clr-namespace:TPW_DB_DB.ViewModel"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-		<Label Name="lbla" Content="Podaj a:" FontSize="15" RenderTransformOrigin="0.531,0.655"/>
-		<TextBox Width="50" Height="20" Name="a"/>
-		<Label Name="lblb" Content="Podaj b:" FontSize="15" RenderTransformOrigin="0.403,0.418"/>
-		<TextBox Width="50" Height="20" Name="b" RenderTransformOrigin="0.48,0.572"/>
-		
+        Title="MainWindow" Height="750" Width="900">
+    <Window.DataContext>
+        <mw:ViewModelLinearFunction></mw:ViewModelLinearFunction>
+    </Window.DataContext>
+    <Grid  Height="750" Width="900">
+        <Label Name="lbla" Content="Podaj a:" FontSize="20" Width="100" Height="35" Margin="100,100,700,599" />
+        <TextBox Text="{Binding Path=wspA, Mode=TwoWay}" FontSize="10" Name="a" Width="100" Height="35" Margin="100,182,700,533" />
+        <Label Name="lblb" Content="Podaj b:" FontSize="20" Width="100" Height="35" Margin="259,100,541,609"/>
+        <TextBox FontSize="10" Text="{Binding Path=wspB, Mode=TwoWay}" Name="b" Width="100" Height="35" Margin="259,182,541,533"/>
+        <Label Name="wynik" Content="{Binding Path=wynik, Mode=TwoWay}" FontSize="20" Width="100" Height="35" Margin="426,182,374,533"/>
     </Grid>
 </Window>

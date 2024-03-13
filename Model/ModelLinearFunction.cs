@@ -8,11 +8,10 @@ namespace TPW_DB_DB.Model
 {
     public class ModelLinearFunction
     {
-        public double a;
-        public double b;
+        public double a = 1;
+        public double b = -10;
     
-
-    public double FindZero(double a, double b)
+    public double FindZero()
     {
         return -b / a;
     }
