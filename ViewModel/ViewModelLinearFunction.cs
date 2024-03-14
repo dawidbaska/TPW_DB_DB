@@ -39,7 +39,7 @@ namespace TPW_DB_DB.ViewModel
             }
         }
 
-        public double wynik
+        public double? wynik
         {
             get
             {

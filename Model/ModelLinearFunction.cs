@@ -11,9 +11,10 @@ namespace TPW_DB_DB.Model
         public double a = 1;
         public double b = -10;
     
-    public double FindZero()
+    public double? FindZero()
     {
-        return -b / a;
+        if (a == 0) return null;
+        else return -b / a;
     }
 
     }
