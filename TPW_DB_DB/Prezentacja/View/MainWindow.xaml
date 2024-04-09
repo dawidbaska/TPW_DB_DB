@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Prezentacja"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+        Title="MainWindow" Height="500" Width="800">
+    <Grid Height="500" Width="800">
+        <Button x:Name="StartGame" Width="120" Height="36" Content="Start Game" Margin="10,10,670,454" />
+        <TextBox FontSize="22" Name="IleKul" Width="100" Height="36" Margin="170,10,0,0"  TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top">1</TextBox>
+        <Canvas Background="#007400" Name="płótnoRysunkowe" Height="350" Width="600" Margin="100,75,100,75"/>
     </Grid>
 </Window>
