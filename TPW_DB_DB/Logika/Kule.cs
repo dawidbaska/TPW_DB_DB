@@ -38,5 +38,10 @@
         {
             return this.lista.Count;
         }
+
+        public void ListaClear()
+        {
+            this.lista.Clear();
+        }
     }
 }

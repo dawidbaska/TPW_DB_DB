@@ -3,12 +3,14 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Prezentacja"
+        xmlns:local="clr-namespace:Prezentacja" xmlns:viewmodel="clr-namespace:Prezentacja.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:ViewModelKula}"
         mc:Ignorable="d"
         Title="MainWindow" Height="500" Width="800">
+
+    
     <Grid Height="500" Width="800">
-        <Button x:Name="StartGame" Width="120" Height="36" Content="Start Game" Margin="10,10,670,454" />
-        <TextBox FontSize="22" Name="IleKul" Width="100" Height="36" Margin="170,10,0,0"  TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top">1</TextBox>
+        <Button x:Name="StartGame" Width="120" Height="36" Content="Start Game" Margin="10,10,670,454" Command="{Binding Button}"/>
+        <TextBox FontSize="22" Name="text" Width="100" Height="36" Margin="170,10,0,0"  TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" Text="{Binding Path=iKul, Mode=TwoWay}"></TextBox>
         <Canvas Background="#007400" Name="płótnoRysunkowe" Height="350" Width="600" Margin="100,75,100,75"/>
     </Grid>
 </Window>
