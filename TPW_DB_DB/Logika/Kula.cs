@@ -1,14 +1,12 @@
 ﻿namespace Logika
 {
-    public class Kula
+    public class Kula 
     {
-
-        public void losujstart()
+        public void LosujStart()
         {
             var rand = new Random();
             int x1 = rand.Next(-1, 1);
             int y1 = rand.Next(-1, 1);
-
         }
 
     }
