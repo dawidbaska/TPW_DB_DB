@@ -27,5 +27,7 @@
         {
             this.lista.Add(new Dane.Kula());
         }
+
+        //?
     }
 }
