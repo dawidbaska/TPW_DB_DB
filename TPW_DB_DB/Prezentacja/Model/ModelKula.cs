@@ -11,7 +11,7 @@ namespace Prezentacja.Model
     internal class ModelKula 
     {
         private int ilekul = 11;
-        Logika.Kule logika = new Logika.Kule();
+        private Logika.Kule logika = new Logika.Kule();
 
         public int Ile { get => ilekul; set => ilekul = value; }
 
@@ -20,11 +20,29 @@ namespace Prezentacja.Model
             logika.ListaClear();
             for(int i=0; i<this.ilekul; i++) {
                 this.logika.DodajKula();
+                this.logika.LosujStart(10, 200, 25, 50, i);
             }
             Debug.WriteLine(logika.ListaGetSize());
         }
 
+        public void ruch(int j)
+        {
+            for (int i = 0; i < this.ilekul; i++)
+            {
+                this.logika.LosujNowaPozycja(j);
+            }
+        }
 
+        public int listaSize()
+        {
+            return this.logika.ListaGetSize();
+        }
+
+        public Dane.Kula getKula(int i)
+        {
+            Dane.Kula kula = this.logika.GetKula(i);
+            return kula;
+        }
     }
 
    

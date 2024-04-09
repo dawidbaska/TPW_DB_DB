@@ -11,6 +11,18 @@
     <Grid Height="500" Width="800">
         <Button x:Name="StartGame" Width="120" Height="36" Content="Start Game" Margin="10,10,670,454" Command="{Binding Button}"/>
         <TextBox FontSize="22" Name="text" Width="100" Height="36" Margin="170,10,0,0"  TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" Text="{Binding Path=iKul, Mode=TwoWay}"></TextBox>
-        <Canvas Background="#007400" Name="płótnoRysunkowe" Height="350" Width="600" Margin="100,75,100,75"/>
+        <Border BorderThickness="4" BorderBrush="Green" Height="300" Width="600">
+            <ItemsControl ItemsSource="{Binding KulePositions}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Ellipse Width="20" Height="20" Fill="Red">
+                            <Ellipse.RenderTransform>
+                                <TranslateTransform X="{Binding X}" Y="{Binding Y}" />
+                            </Ellipse.RenderTransform>
+                        </Ellipse>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </Border>
     </Grid>
 </Window>
