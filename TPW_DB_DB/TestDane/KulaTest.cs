@@ -4,7 +4,7 @@ namespace TestDane
     public class KulaTest
     {
         [TestMethod]
-        public void TestKulaSet()
+        public void TestKulaSetGet()
         {
             Dane.Kula kula = new Dane.Kula();
             
