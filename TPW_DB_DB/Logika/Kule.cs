@@ -1,19 +1,27 @@
-﻿namespace Logika
+﻿using System.Diagnostics;
+
+namespace Logika
 {
     public class Kule 
     {
         private List<Dane.Kula> lista = new List<Dane.Kula> { };
 
-        public void LosujNowaPozycja(int i)
+        public void LosujNowaPozycja(int x1, int x2, int y1, int y2, int i)
         {
             var rand = new Random();
-            int x1 = rand.Next(-1, 1);
-            int y1 = rand.Next(-1, 1);
-            int orgX = this.lista.ElementAt(i).X;
-            int orgY = this.lista.ElementAt(i).Y;
-            this.lista.ElementAt(i).X = orgX - x1;
-            this.lista.ElementAt(i).Y = orgY - y1;
-
+            int x = 0;
+            int y = 0;
+            int orgX = 0;
+            int orgY = 0;
+            do
+            {
+                x = rand.Next(-1, 2);
+                y = rand.Next(-1, 2);
+                orgX = this.lista.ElementAt(i).X;
+                orgY = this.lista.ElementAt(i).Y;
+            } while ((orgX - x >= x2 || orgX - x < x1) || (orgY - y >= y2 || orgY - y < y1));
+                this.lista.ElementAt(i).X -= x;
+            this.lista.ElementAt(i).Y -= y;
         }
 
         public void LosujStart(int x1, int x2, int y1, int y2, int i)

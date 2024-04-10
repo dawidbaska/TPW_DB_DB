@@ -28,7 +28,7 @@ namespace LogikaTest
             kule.DodajKula();
             kule.LosujStart(0, 100, 0, 100, 0);
             Dane.Kula test = kule.GetKula(0);
-            kule.LosujNowaPozycja(0);
+            kule.LosujNowaPozycja(0, 100, 0, 100, 0);
             Dane.Kula test1 = kule.GetKula(0);
             int dX = test1.X - test.X;
             int dY = test1.Y - test.Y;
