@@ -1,6 +1,6 @@
 ﻿namespace Dane
 {
-    public class Kula
+    public class Kula 
     {
         private int x;
         private int y;

@@ -1,4 +1,5 @@
-﻿using Prezentacja.Model;
+﻿using Dane;
+using Prezentacja.Model;
 using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -23,7 +24,7 @@ namespace Prezentacja.ViewModel
             Button = new Button(this);
         }
 
-        public ModelKula ModelKula = new ModelKula();
+        public ModelKula ModelKula = new ModelKula(Logika.KuleAPI.Create(Dane.DaneAPI.Create()));
 
         public int iKul
         {

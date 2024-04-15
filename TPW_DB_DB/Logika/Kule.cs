@@ -1,12 +1,20 @@
-﻿using System.Diagnostics;
+﻿using Dane;
+using System.Diagnostics;
 
 namespace Logika
 {
-    public class Kule 
+    public class Kule : KuleAPI
     {
         private List<Dane.Kula> lista = new List<Dane.Kula> { };
+        private Dane.DaneAPI daneapi;
 
-        public void LosujNowaPozycja(int x1, int x2, int y1, int y2, int i)
+        public Kule(DaneAPI daneapi)
+        {
+            this.daneapi = daneapi;
+        }
+
+
+        public override void LosujNowaPozycja(int x1, int x2, int y1, int y2, int i)
         {
             var rand = new Random();
             int x = 0;
@@ -24,30 +32,30 @@ namespace Logika
             this.lista.ElementAt(i).Y -= y;
         }
 
-        public void LosujStart(int x1, int x2, int y1, int y2, int i)
+        public override void LosujStart(int x1, int x2, int y1, int y2, int i)
         {
             var rand = new Random();
             this.lista.ElementAt(i).X = rand.Next(x1,x2);
             this.lista.ElementAt(i).Y = rand.Next(y1, y2);
         }
 
-        public void DodajKula()
+        public override void DodajKula()
         {
-            this.lista.Add(new Dane.Kula());
+            this.lista.Add(daneapi.stworz());
         }
 
-        public Dane.Kula GetKula(int i)
+        public override Dane.Kula GetKula(int i)
         {
             Dane.Kula copy = this.lista.ElementAt(i);
             return copy;
         }
 
-        public int ListaGetSize()
+        public override int ListaGetSize()
         {
             return this.lista.Count;
         }
 
-        public void ListaClear()
+        public override void ListaClear()
         {
             this.lista.Clear();
         }

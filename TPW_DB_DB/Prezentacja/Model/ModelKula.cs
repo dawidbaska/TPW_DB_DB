@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Logika;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -11,13 +12,18 @@ namespace Prezentacja.Model
     internal class ModelKula 
     {
         private int ilekul = 1;
-        private Logika.Kule logika = new Logika.Kule();
+        private Logika.KuleAPI logika;
         private int x = 0;
         private int y = 0;
 
         public int Ile { get => ilekul; set => ilekul = value; }
         public int Ilex { get => x; set => x = value; }
         public int Iley { get => y; set => y = value; }
+
+        public ModelKula(KuleAPI logika)
+        {
+            this.logika = logika;
+        }
 
         public void tworzenie()
         {
