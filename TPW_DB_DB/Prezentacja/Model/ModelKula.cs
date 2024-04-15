@@ -10,26 +10,31 @@ namespace Prezentacja.Model
 {
     internal class ModelKula 
     {
-        private int ilekul = 11;
+        private int ilekul = 1;
         private Logika.Kule logika = new Logika.Kule();
+        private int x = 0;
+        private int y = 0;
 
         public int Ile { get => ilekul; set => ilekul = value; }
+        public int Ilex { get => x; set => x = value; }
+        public int Iley { get => y; set => y = value; }
 
         public void tworzenie()
         {
             logika.ListaClear();
             for(int i=0; i<this.ilekul; i++) {
                 this.logika.DodajKula();
-                this.logika.LosujStart(10, 200, 25, 50, i);
+                int przesuniecie = 20;
+                this.logika.LosujStart(-286, 287, 0 - (przesuniecie * i), 273 - (przesuniecie * i), i);
             }
-            Debug.WriteLine(logika.ListaGetSize());
         }
 
-        public void ruch(int j)
+        public void ruch()
         {
             for (int i = 0; i < this.ilekul; i++)
             {
-                this.logika.LosujNowaPozycja(j);
+                int przesuniecie = 20;
+                this.logika.LosujNowaPozycja(-286, 287, 0 - (przesuniecie * i), 273 - (przesuniecie * i), i);
             }
         }
 
