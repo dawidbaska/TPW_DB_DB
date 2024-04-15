@@ -3,12 +3,12 @@ using System.Diagnostics;
 
 namespace Logika
 {
-    public class Kule : KuleAPI
+    public class Logika : LogikaAPI
     {
         private List<Dane.Kula> lista = new List<Dane.Kula> { };
         private Dane.DaneAPI daneapi;
 
-        public Kule(DaneAPI daneapi)
+        public Logika(DaneAPI daneapi)
         {
             this.daneapi = daneapi;
         }
@@ -41,7 +41,7 @@ namespace Logika
 
         public override void DodajKula()
         {
-            this.lista.Add(daneapi.stworz());
+            this.lista.Add(daneapi.KulaStworz());
         }
 
         public override Dane.Kula GetKula(int i)

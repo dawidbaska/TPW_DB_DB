@@ -8,11 +8,11 @@ namespace Dane
 {
     public abstract class DaneAPI
     {
-        public static DaneAPI Create()
+        public static DaneAPI Stworz()
         {
             return new DaneImplementacja();
         }
-        public abstract Kula stworz();
+        public abstract Kula KulaStworz();
     }
     
 }

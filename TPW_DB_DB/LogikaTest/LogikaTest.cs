@@ -1,12 +1,12 @@
 namespace LogikaTest
 {
     [TestClass]
-    public class KuleTest
+    public class LogikaTest
     {
         [TestMethod]
         public void TestDodajKula()
         {
-            Logika.Kule kule = new Logika.Kule();
+            Logika.LogikaAPI kule = new Logika.Logika(Dane.DaneAPI.Stworz());
             kule.DodajKula();
             Assert.AreEqual(1,kule.ListaGetSize());
         }
@@ -14,7 +14,7 @@ namespace LogikaTest
         [TestMethod]
         public void TestLosujStar()
         {
-            Logika.Kule kule = new Logika.Kule();
+            Logika.LogikaAPI kule = new Logika.Logika(Dane.DaneAPI.Stworz());
             kule.DodajKula();
             kule.LosujStart(0, 100, 0, 100, 0);
             Dane.Kula test = kule.GetKula(0);
@@ -24,7 +24,7 @@ namespace LogikaTest
         [TestMethod]
         public void TestLosujNowaPozycja()
         {
-            Logika.Kule kule = new Logika.Kule();
+            Logika.LogikaAPI kule = new Logika.Logika(Dane.DaneAPI.Stworz());
             kule.DodajKula();
             kule.LosujStart(0, 100, 0, 100, 0);
             Dane.Kula test = kule.GetKula(0);
@@ -39,7 +39,7 @@ namespace LogikaTest
         [TestMethod]
         public void TestListaClear()
         {
-            Logika.Kule kule = new Logika.Kule();
+            Logika.LogikaAPI kule = new Logika.Logika(Dane.DaneAPI.Stworz());
             kule.DodajKula();
             Assert.AreEqual(1, kule.ListaGetSize());
             kule.ListaClear();

@@ -7,11 +7,11 @@ using System.Windows.Input;
 
 namespace Prezentacja.ViewModel
 {
-    internal class Button : ICommand
+    internal class Start : ICommand
     {   
         public ViewModelKula ViewModelKula { get; set; }
 
-        public Button(ViewModelKula viewmodel) { 
+        public Start(ViewModelKula viewmodel) { 
             this.ViewModelKula = viewmodel;
         }
 
@@ -24,7 +24,7 @@ namespace Prezentacja.ViewModel
 
         public void Execute(object? parameter)
         {
-            ViewModelKula.Mess();
+            ViewModelKula.StartGry();
         }
     }
 }

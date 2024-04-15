@@ -8,7 +8,7 @@ namespace Dane
 {
     public class DaneImplementacja : DaneAPI
     {
-        public override Kula stworz()
+        public override Kula KulaStworz()
         {
             return new Kula();
         }

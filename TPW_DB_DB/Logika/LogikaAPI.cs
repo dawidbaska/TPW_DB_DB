@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Logika
 {
-    public abstract class KuleAPI
+    public abstract class LogikaAPI
     {
         public abstract void LosujNowaPozycja(int x1, int x2, int y1, int y2, int i);
         public abstract void LosujStart(int x1, int x2, int y1, int y2, int i);
@@ -15,9 +15,9 @@ namespace Logika
         public abstract Dane.Kula GetKula(int i);
         public abstract int ListaGetSize();
         public abstract void ListaClear();
-        public static KuleAPI Create(DaneAPI dataApi = default!)
+        public static LogikaAPI Stworz(DaneAPI dataApi = default!)
         {
-            return new Kule(dataApi);
+            return new Logika(dataApi);
         }
     }
 }

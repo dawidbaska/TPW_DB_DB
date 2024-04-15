@@ -15,16 +15,16 @@ namespace Prezentacja.ViewModel
     {
         private DispatcherTimer timer;
         
-        public Button Button { get; set; }
+        public Start Button { get; set; }
         public ObservableCollection<Dane.Kula> KulePositions { get; set; }
 
         public ViewModelKula()
         {
             KulePositions = new ObservableCollection<Dane.Kula>();
-            Button = new Button(this);
+            Button = new Start(this);
         }
 
-        public ModelKula ModelKula = new ModelKula(Logika.KuleAPI.Create(Dane.DaneAPI.Create()));
+        public ModelKula ModelKula = new ModelKula(Logika.LogikaAPI.Stworz(Dane.DaneAPI.Stworz()));
 
         public int iKul
         {
@@ -37,7 +37,7 @@ namespace Prezentacja.ViewModel
         }
 
 
-        public void Mess()
+        public void StartGry()
         {
             ModelKula.tworzenie();
             KulePositions.Clear();
