@@ -35,5 +35,15 @@ namespace LogikaTest
             Assert.IsTrue(dX >= -1 && dX <= 1);
             Assert.IsTrue(dY >= -1 && dY <= 1);
         }
+
+        [TestMethod]
+        public void TestListaClear()
+        {
+            Logika.Kule kule = new Logika.Kule();
+            kule.DodajKula();
+            Assert.AreEqual(1, kule.ListaGetSize());
+            kule.ListaClear();
+            Assert.AreEqual(0, kule.ListaGetSize());
+        }
     }
 }
