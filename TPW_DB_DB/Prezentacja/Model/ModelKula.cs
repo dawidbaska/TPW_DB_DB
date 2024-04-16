@@ -13,12 +13,10 @@ namespace Prezentacja.Model
     {
         private int ilekul = 1;
         private Logika.LogikaAPI logika;
-        private int x = 0;
-        private int y = 0;
+        
 
         public int Ile { get => ilekul; set => ilekul = value; }
-        public int Ilex { get => x; set => x = value; }
-        public int Iley { get => y; set => y = value; }
+        
 
         public ModelKula(LogikaAPI logika)
         {
