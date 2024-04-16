@@ -13,12 +13,10 @@ namespace Prezentacja.Model
     {
         private int ilekul = 1;
         private Logika.LogikaAPI logika;
-        private int x = 0;
-        private int y = 0;
+        
 
         public int Ile { get => ilekul; set => ilekul = value; }
-        public int Ilex { get => x; set => x = value; }
-        public int Iley { get => y; set => y = value; }
+        
 
         public ModelKula(LogikaAPI logika)
         {
@@ -30,8 +28,7 @@ namespace Prezentacja.Model
             logika.ListaClear();
             for(int i=0; i<this.ilekul; i++) {
                 this.logika.DodajKula();
-                int przesuniecie = 20;
-                this.logika.LosujStart(-286, 287, 0 - (przesuniecie * i), 273 - (przesuniecie * i), i);
+                this.logika.LosujStart(20, 580, 20, 280, i);
             }
         }
 
@@ -40,7 +37,7 @@ namespace Prezentacja.Model
             for (int i = 0; i < this.ilekul; i++)
             {
                 int przesuniecie = 20;
-                this.logika.LosujNowaPozycja(-286, 287, 0 - (przesuniecie * i), 273 - (przesuniecie * i), i);
+                this.logika.LosujNowaPozycja(20, 580, 20,280, i);
             }
         }
 

@@ -23,8 +23,8 @@ namespace Logika
             int orgY = 0;
             do
             {
-                x = rand.Next(-1, 2);
-                y = rand.Next(-1, 2);
+                x = rand.Next(-1,2);
+                y = rand.Next(-1,2);
                 orgX = this.lista.ElementAt(i).X;
                 orgY = this.lista.ElementAt(i).Y;
             } while ((orgX - x >= x2 || orgX - x < x1) || (orgY - y >= y2 || orgY - y < y1));
