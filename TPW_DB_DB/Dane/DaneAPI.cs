@@ -13,6 +13,8 @@ namespace Dane
             return new DaneImplementacja();
         }
         public abstract Kula KulaStworz();
+
+        public abstract Plansza PlanszaStworz();
     }
     
 }

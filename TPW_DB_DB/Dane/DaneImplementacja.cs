@@ -12,5 +12,10 @@ namespace Dane
         {
             return new Kula();
         }
+
+        public override Plansza PlanszaStworz()
+        {
+            return new Plansza();
+        }
     }
 }
