@@ -24,26 +24,24 @@ namespace Logika
             int y = 0;
             int orgX = 0;
             int orgY = 0;
+            if(this.lista.ElementAt(i).Nadany_Wektor == false) {
+                this.lista.ElementAt(i).Nadany_Wektor = true;
+                this.lista.ElementAt(i).Wektor_X = rand.Next(-1, 2);
+                this.lista.ElementAt(i).Wektor_Y = rand.Next(-1, 2);
+            }
+            while(this.lista.ElementAt(i).Wektor_Y == 0 && this.lista.ElementAt(i).Wektor_X == 0)
+            {
+                this.lista.ElementAt(i).Wektor_X = rand.Next(-1,2);
+                this.lista.ElementAt(i).Wektor_Y = rand.Next(-1, 2);
+            }
+            if (this.lista.ElementAt(i).X <= x1 || this.lista.ElementAt(i).X >= x2)
+                this.lista.ElementAt(i).Wektor_X *= -1;
+            if (this.lista.ElementAt(i).Y <= y1 || this.lista.ElementAt(i).Y >= y2)
+                this.lista.ElementAt(i).Wektor_Y *= -1;
+            this.lista.ElementAt(i).Y += this.lista.ElementAt(i).Wektor_Y;
+            this.lista.ElementAt(i).X += this.lista.ElementAt(i).Wektor_X;
 
-            int xwektor = -1;
-            int ywektor = 1;
 
-            orgX = this.lista.ElementAt(i).X;
-            orgY = this.lista.ElementAt(i).Y;
-            x = orgX + xwektor;
-            y = orgY + ywektor;
-            Debug.WriteLine(x1);
-            Debug.WriteLine("x");
-            Debug.WriteLine(x);
-
-            if (x == x1 || x == x2)
-                xwektor = xwektor * (-1);
-
-            if (y == y1 || y == y2)
-                xwektor = ywektor * (-1);
-            this.lista.ElementAt(i).X = x;
-            this.lista.ElementAt(i).Y = y;
-     
         }
 
         public override void LosujStart(int x1, int x2, int y1, int y2, int i)
