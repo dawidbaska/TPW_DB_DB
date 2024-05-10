@@ -19,17 +19,37 @@ namespace Logika
             var rand = new Random();
             int x = 0;
             int y = 0;
-            int orgX = 0;
-            int orgY = 0;
+   
+
+            int xwektor = 0;
+            int ywektor = 0;
+
+            xwektor = rand.Next(-3, 4);
+            if(xwektor == 0)
+            {
+                do
+                {
+                    ywektor = rand.Next(-3, 4);
+                } while(ywektor != 0);
+                
+            } else
+            ywektor = rand.Next(-3, 4);
+            if (xwektor == ywektor)
+            {
+                xwektor = 1;
+                ywektor = 1;
+            }
+
             do
             {
-                x = rand.Next(-1,2);
-                y = rand.Next(-1,2);
-                orgX = this.lista.ElementAt(i).X;
-                orgY = this.lista.ElementAt(i).Y;
-            } while ((orgX - x >= x2 || orgX - x < x1) || (orgY - y >= y2 || orgY - y < y1));
-                this.lista.ElementAt(i).X -= x;
-            this.lista.ElementAt(i).Y -= y;
+                x = x + xwektor;
+                y = y + ywektor;
+                if (x == x1 || x == x2)
+                    xwektor = xwektor * (-1);
+                if (y == y1 || y == y2)
+                    ywektor = ywektor * (-1);
+
+            } while (x < x1 || x > x2 || y < y1 || y > y2);
         }
 
         public override void LosujStart(int x1, int x2, int y1, int y2, int i)
