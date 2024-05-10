@@ -8,15 +8,13 @@ namespace Dane
 {
     public class Plansza
     {
-        private int xd;
-        private int yl;
-        private int xu;
-        private int yr;
+        private int w;
+        private int h;
+       
 
 
-        public int XD { get => xd; set => xd = value; }
-        public int YL { get => yl; set => yl = value; }
-        public int XU { get => xu; set => xu = value; }
-        public int YR { get => yr; set => yr = value; }
+        public int W { get => w; set => w = value; }
+        public int H { get => h; set => h = value; }
+      
     }
 }

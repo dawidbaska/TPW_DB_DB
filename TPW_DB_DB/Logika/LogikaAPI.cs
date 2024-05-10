@@ -19,5 +19,6 @@ namespace Logika
         {
             return new Logika(dataApi);
         }
+        public abstract Dane.Plansza StworzPlansze(int w, int h);
     }
 }

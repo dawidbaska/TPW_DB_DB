@@ -46,8 +46,8 @@ namespace Logika
 
         public override Dane.Kula GetKula(int i)
         {
-            Dane.Kula copy = this.lista.ElementAt(i);
-            return copy;
+            Dane.Kula kula = this.lista.ElementAt(i);
+            return kula;
         }
 
         public override int ListaGetSize()
@@ -58,6 +58,14 @@ namespace Logika
         public override void ListaClear()
         {
             this.lista.Clear();
+        }
+
+        public override Plansza StworzPlansze(int w, int h)
+        {
+            Dane.Plansza plansza = new Dane.Plansza();
+            plansza.W = w;
+            plansza.H = h;
+            return plansza;
         }
     }
 }

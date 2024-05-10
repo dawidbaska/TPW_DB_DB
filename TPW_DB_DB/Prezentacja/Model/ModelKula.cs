@@ -1,4 +1,5 @@
-﻿using Logika;
+﻿using Dane;
+using Logika;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -13,22 +14,26 @@ namespace Prezentacja.Model
     {
         private int ilekul = 1;
         private Logika.LogikaAPI logika;
+        private Dane.Plansza plansza;
         
 
         public int Ile { get => ilekul; set => ilekul = value; }
         
 
+
         public ModelKula(LogikaAPI logika)
         {
             this.logika = logika;
+            this.plansza = this.logika.StworzPlansze(200, 100);
         }
 
         public void tworzenie()
         {
             logika.ListaClear();
             for(int i=0; i<this.ilekul; i++) {
+                int r = 20;
                 this.logika.DodajKula();
-                this.logika.LosujStart(20, 580, 20, 280, i);
+                this.logika.LosujStart(r, plansza.W-r, r, plansza.H-r, i);
             }
         }
 
@@ -36,8 +41,8 @@ namespace Prezentacja.Model
         {
             for (int i = 0; i < this.ilekul; i++)
             {
-                int przesuniecie = 20;
-                this.logika.LosujNowaPozycja(20, 580, 20,280, i);
+                int r = 20;
+                this.logika.LosujNowaPozycja(r, plansza.W-r, r,plansza.H-r, i);
             }
         }
 
