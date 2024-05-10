@@ -14,6 +14,8 @@ namespace Logika
             this.daneapi = daneapi;
         }
 
+        
+
 
         public override void LosujNowaPozycja(int x1, int x2, int y1, int y2, int i)
         {
@@ -22,15 +24,26 @@ namespace Logika
             int y = 0;
             int orgX = 0;
             int orgY = 0;
-            do
-            {
-                x = rand.Next(-1, 2);
-                y = rand.Next(-1, 2);
-                orgX = this.lista.ElementAt(i).X;
-                orgY = this.lista.ElementAt(i).Y;
-            } while ((orgX - x >= x2 || orgX - x < x1) || (orgY - y >= y2 || orgY - y < y1));
-            this.lista.ElementAt(i).X -= x;
-            this.lista.ElementAt(i).Y -= y;
+
+            int xwektor = -1;
+            int ywektor = 1;
+
+            orgX = this.lista.ElementAt(i).X;
+            orgY = this.lista.ElementAt(i).Y;
+            x = orgX + xwektor;
+            y = orgY + ywektor;
+            Debug.WriteLine(x1);
+            Debug.WriteLine("x");
+            Debug.WriteLine(x);
+
+            if (x == x1 || x == x2)
+                xwektor = xwektor * (-1);
+
+            if (y == y1 || y == y2)
+                xwektor = ywektor * (-1);
+            this.lista.ElementAt(i).X = x;
+            this.lista.ElementAt(i).Y = y;
+     
         }
 
         public override void LosujStart(int x1, int x2, int y1, int y2, int i)
