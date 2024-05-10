@@ -15,25 +15,34 @@ namespace Prezentacja.Model
         private int ilekul = 1;
         private Logika.LogikaAPI logika;
         private Dane.Plansza plansza;
-        
+       
 
         public int Ile { get => ilekul; set => ilekul = value; }
-        
+        public int Width { get => plansza.W; set => plansza.W = value; }
+        public int Height { get => plansza.H; set => plansza.H = value; }
+        public int BorderThickness { get => plansza.BT; set => plansza.BT = value; }
+       
+
 
 
         public ModelKula(LogikaAPI logika)
         {
             this.logika = logika;
-            this.plansza = this.logika.StworzPlansze(200, 100);
+            this.plansza = this.logika.StworzPlansze(600, 300, 4);
+
         }
 
         public void tworzenie()
         {
+            var rand = new Random();
+            float predkosc = 1;
+            int srednica = 10;
+            float waga = 10;
             logika.ListaClear();
             for(int i=0; i<this.ilekul; i++) {
-                int r = 20;
-                this.logika.DodajKula();
-                this.logika.LosujStart(r, plansza.W-r, r, plansza.H-r, i);
+                this.logika.DodajKula(predkosc, srednica, waga);
+                int r = this.logika.GetKula(i).Srednica;
+                this.logika.LosujStart(0, plansza.W - r - 2 * this.BorderThickness + 1, 0, plansza.H - r - 2 * this.BorderThickness + 1, i);
             }
         }
 
@@ -41,8 +50,8 @@ namespace Prezentacja.Model
         {
             for (int i = 0; i < this.ilekul; i++)
             {
-                int r = 20;
-                this.logika.LosujNowaPozycja(r, plansza.W-r, r,plansza.H-r, i);
+                int r = this.logika.GetKula(i).Srednica;
+                this.logika.LosujNowaPozycja(0, plansza.W - r - 2 * this.BorderThickness + 1, 0, plansza.H - r - 2 * this.BorderThickness + 1, i);
             }
         }
 

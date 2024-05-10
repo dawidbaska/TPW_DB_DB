@@ -11,7 +11,7 @@ namespace Logika
     {
         public abstract void LosujNowaPozycja(int x1, int x2, int y1, int y2, int i);
         public abstract void LosujStart(int x1, int x2, int y1, int y2, int i);
-        public abstract void DodajKula();
+        public abstract void DodajKula(float predkosc, int srednica, float waga);
         public abstract Dane.Kula GetKula(int i);
         public abstract int ListaGetSize();
         public abstract void ListaClear();
@@ -19,6 +19,6 @@ namespace Logika
         {
             return new Logika(dataApi);
         }
-        public abstract Dane.Plansza StworzPlansze(int w, int h);
+        public abstract Dane.Plansza StworzPlansze(int w, int h, int bt);
     }
 }

@@ -8,9 +8,9 @@ namespace Dane
 {
     public class DaneImplementacja : DaneAPI
     {
-        public override Kula KulaStworz()
+        public override Kula KulaStworz(float predkosc, int srednica, float waga)
         {
-            return new Kula();
+            return new Kula(predkosc, srednica, waga);
         }
 
         public override Plansza PlanszaStworz()

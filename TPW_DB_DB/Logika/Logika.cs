@@ -1,5 +1,6 @@
 ﻿using Dane;
 using System.Diagnostics;
+using System.Linq.Expressions;
 
 namespace Logika
 {
@@ -23,8 +24,8 @@ namespace Logika
             int orgY = 0;
             do
             {
-                x = rand.Next(-1,2);
-                y = rand.Next(-1,2);
+                x = rand.Next(-2,0);
+                y = rand.Next(-2,0);
                 orgX = this.lista.ElementAt(i).X;
                 orgY = this.lista.ElementAt(i).Y;
             } while ((orgX - x >= x2 || orgX - x < x1) || (orgY - y >= y2 || orgY - y < y1));
@@ -39,9 +40,9 @@ namespace Logika
             this.lista.ElementAt(i).Y = rand.Next(y1, y2);
         }
 
-        public override void DodajKula()
+        public override void DodajKula(float predkosc, int srednica, float waga)
         {
-            this.lista.Add(daneapi.KulaStworz());
+            this.lista.Add(daneapi.KulaStworz(predkosc, srednica, waga));
         }
 
         public override Dane.Kula GetKula(int i)
@@ -60,11 +61,12 @@ namespace Logika
             this.lista.Clear();
         }
 
-        public override Plansza StworzPlansze(int w, int h)
+        public override Plansza StworzPlansze(int w, int h, int bt)
         {
             Dane.Plansza plansza = new Dane.Plansza();
             plansza.W = w;
             plansza.H = h;
+            plansza.BT = bt;
             return plansza;
         }
     }

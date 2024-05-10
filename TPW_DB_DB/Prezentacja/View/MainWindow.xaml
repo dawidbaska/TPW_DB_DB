@@ -11,7 +11,7 @@
     <Grid Height="500" Width="800" HorizontalAlignment="Right" Margin="0,0,0,-16" RenderTransformOrigin="0.495,0.513">
         <Button x:Name="StartGame" Width="120" Height="36" Content="Start Game" Margin="10,10,670,454" Command="{Binding Button}"/>
         <TextBox FontSize="22" Name="text" Width="100" Height="36" Margin="170,10,0,0"  TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" Text="{Binding Path=iKul, Mode=TwoWay}"></TextBox>
-        <Border BorderThickness="4" BorderBrush="Green" Height="300" Width="600">
+        <Border BorderThickness="{Binding BorderT}" BorderBrush="Green" Height="{Binding Height}" Width="{Binding Width}">
             <ItemsControl ItemsSource="{Binding KulePositions}">
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>
@@ -20,7 +20,7 @@
                 </ItemsControl.ItemsPanel>
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <Ellipse Width="20" Height="20" Fill="Red">
+                        <Ellipse Width="{Binding Srednica}" Height="{Binding Srednica}" Fill="Red">
                             <Ellipse.RenderTransform>
                                 <TranslateTransform X="{Binding X}" Y="{Binding Y}" />
                             </Ellipse.RenderTransform>

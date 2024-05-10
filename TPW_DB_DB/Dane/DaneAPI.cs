@@ -12,7 +12,7 @@ namespace Dane
         {
             return new DaneImplementacja();
         }
-        public abstract Kula KulaStworz();
+        public abstract Kula KulaStworz(float predkosc, int srednica, float waga);
 
         public abstract Plansza PlanszaStworz();
     }
