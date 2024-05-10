@@ -3,18 +3,13 @@ using Prezentacja.Model;
 using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Diagnostics;
+using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Input;
-using System.Windows.Threading;
 
 namespace Prezentacja.ViewModel
 {
     internal class ViewModelKula : INotifyPropertyChanged
     {
-        private DispatcherTimer timer;
-        
         public Start Button { get; set; }
         public ObservableCollection<Dane.Kula> KulePositions { get; set; }
         public ModelKula ModelKula = new ModelKula(Logika.LogikaAPI.Stworz(Dane.DaneAPI.Stworz()));
@@ -25,8 +20,6 @@ namespace Prezentacja.ViewModel
             KulePositions = new ObservableCollection<Dane.Kula>();
             Button = new Start(this);
         }
-     
-
 
         public int iKul
         {
@@ -38,13 +31,13 @@ namespace Prezentacja.ViewModel
             }
         }
 
-        public int  Width
+        public int Width
         {
-            get { return ModelKula.Width;  }
+            get { return ModelKula.Width; }
             set
             {
-               ModelKula.Width = value;
-               OnPropertyChanged(nameof(Width));
+                ModelKula.Width = value;
+                OnPropertyChanged(nameof(Width));
             }
         }
 
@@ -53,7 +46,7 @@ namespace Prezentacja.ViewModel
             get { return ModelKula.Height; }
             set
             {
-                ModelKula.Width = value;
+                ModelKula.Height = value;
                 OnPropertyChanged(nameof(Height));
             }
         }
@@ -68,29 +61,12 @@ namespace Prezentacja.ViewModel
             }
         }
 
-
-        public void StartGry()
+        public async void StartGry()
         {
             ModelKula.tworzenie();
-            KulePositions.Clear();
-            for (int i = 0; i < iKul; i++)
+            while (true)
             {
-                Dane.Kula kula = ModelKula.getKula(i);
-                KulePositions.Add(kula);
-            }
-            if (timer == null)
-            {
-                timer = new DispatcherTimer();
-                timer.Interval = TimeSpan.FromMilliseconds(50); 
-                timer.Tick += Timer_Tick;
-                timer.Start();
-            }
-        }
-
-        private void Timer_Tick(object sender, EventArgs e)
-        {
-            if (ModelKula.listaSize() == iKul)
-            {
+                await Task.Delay(50);
                 RuchKul();
             }
         }

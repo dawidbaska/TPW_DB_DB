@@ -36,9 +36,10 @@ namespace Prezentacja.Model
         {
             var rand = new Random();
             float predkosc = 1;
-            int srednica = 10;
+            int srednica = 20;
             float waga = 10;
             logika.ListaClear();
+            Debug.WriteLine(this.Ile);
             for(int i=0; i<this.ilekul; i++) {
                 this.logika.DodajKula(predkosc, srednica, waga);
                 int r = this.logika.GetKula(i).Srednica;
@@ -48,11 +49,13 @@ namespace Prezentacja.Model
 
         public void ruch()
         {
+   
             for (int i = 0; i < this.ilekul; i++)
             {
-                int r = this.logika.GetKula(i).Srednica;
-                this.logika.LosujNowaPozycja(0, plansza.W - r - 2 * this.BorderThickness + 1, 0, plansza.H - r - 2 * this.BorderThickness + 1, i);
-            }
+              int r = this.logika.GetKula(i).Srednica;
+              this.logika.LosujNowaPozycja(0, plansza.W - r - 2 * this.BorderThickness + 1, 0, plansza.H - r - 2 * this.BorderThickness + 1, i);
+             }
+     
         }
 
         public int listaSize()
