@@ -24,7 +24,7 @@ namespace Prezentacja.Model
         public ModelKula(LogikaAPI logika)
         {
             this.logika = logika;
-            this.plansza = this.logika.StworzPlansze(200, 100);
+            this.plansza = this.logika.StworzPlansze(600, 300);
         }
 
         public void tworzenie()

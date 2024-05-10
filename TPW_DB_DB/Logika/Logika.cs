@@ -13,43 +13,36 @@ namespace Logika
             this.daneapi = daneapi;
         }
 
+        
+
 
         public override void LosujNowaPozycja(int x1, int x2, int y1, int y2, int i)
         {
             var rand = new Random();
             int x = 0;
             int y = 0;
-   
+            int orgX = 0;
+            int orgY = 0;
 
-            int xwektor = 0;
-            int ywektor = 0;
+            int xwektor = -1;
+            int ywektor = 1;
 
-            xwektor = rand.Next(-3, 4);
-            if(xwektor == 0)
-            {
-                do
-                {
-                    ywektor = rand.Next(-3, 4);
-                } while(ywektor != 0);
-                
-            } else
-            ywektor = rand.Next(-3, 4);
-            if (xwektor == ywektor)
-            {
-                xwektor = 1;
-                ywektor = 1;
-            }
+            orgX = this.lista.ElementAt(i).X;
+            orgY = this.lista.ElementAt(i).Y;
+            x = orgX + xwektor;
+            y = orgY + ywektor;
+            Debug.WriteLine(x1);
+            Debug.WriteLine("x");
+            Debug.WriteLine(x);
 
-            do
-            {
-                x = x + xwektor;
-                y = y + ywektor;
-                if (x == x1 || x == x2)
-                    xwektor = xwektor * (-1);
-                if (y == y1 || y == y2)
-                    ywektor = ywektor * (-1);
+            if (x == x1 || x == x2)
+                xwektor = xwektor * (-1);
 
-            } while (x < x1 || x > x2 || y < y1 || y > y2);
+            if (y == y1 || y == y2)
+                xwektor = ywektor * (-1);
+            this.lista.ElementAt(i).X = x;
+            this.lista.ElementAt(i).Y = y;
+     
         }
 
         public override void LosujStart(int x1, int x2, int y1, int y2, int i)
