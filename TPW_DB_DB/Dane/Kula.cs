@@ -1,9 +1,11 @@
-﻿namespace Dane
+﻿using System.ComponentModel;
+
+namespace Dane
 {
-    public class Kula 
+    public class Kula : INotifyPropertyChanged
     {
-        private int x;
-        private int y;
+        private float x;
+        private float y;
         private float predkosc;
         private int srednica;
         private float waga;
@@ -11,9 +13,26 @@
         private int wektor_y;
         private bool nadany_wektor = false;
 
+        public event PropertyChangedEventHandler? PropertyChanged;
 
-        public int X { get => x; set => x = value; }
-        public int Y { get => y; set => y = value; }
+        public float X
+        {
+            get { return x; }
+            set
+            {
+                x = value;
+                OnPropertyChanged(nameof(X));
+            }
+        }
+        public float Y
+        {
+            get { return y; }
+            set
+            {
+                y = value;
+                OnPropertyChanged(nameof(Y));
+            }
+        }
         public int Wektor_Y { get => wektor_y; set => wektor_y = value; }
         public int Wektor_X { get => wektor_x; set => wektor_x = value; }
         public bool Nadany_Wektor { get => nadany_wektor; set => nadany_wektor=value; }
@@ -26,6 +45,11 @@
             this.predkosc = predkosc;
             this.srednica = srednica;
             this.waga = waga;
+        }
+
+        protected virtual void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 

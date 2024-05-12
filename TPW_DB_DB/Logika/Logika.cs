@@ -32,14 +32,18 @@ namespace Logika
             while(this.lista.ElementAt(i).Wektor_Y == 0 && this.lista.ElementAt(i).Wektor_X == 0)
             {
                 this.lista.ElementAt(i).Wektor_X = rand.Next(-1,2);
-                this.lista.ElementAt(i).Wektor_Y = rand.Next(-1, 2);
+                this.lista.ElementAt(i).Wektor_Y = rand.Next(-1,2);
             }
             if (this.lista.ElementAt(i).X <= x1 || this.lista.ElementAt(i).X >= x2)
                 this.lista.ElementAt(i).Wektor_X *= -1;
             if (this.lista.ElementAt(i).Y <= y1 || this.lista.ElementAt(i).Y >= y2)
                 this.lista.ElementAt(i).Wektor_Y *= -1;
-            this.lista.ElementAt(i).Y += this.lista.ElementAt(i).Wektor_Y;
-            this.lista.ElementAt(i).X += this.lista.ElementAt(i).Wektor_X;
+            float ruchx = this.lista.ElementAt(i).Wektor_X * this.lista.ElementAt(i).Predkosc / this.lista.ElementAt(i).Waga;
+            float ruchy = this.lista.ElementAt(i).Wektor_Y * this.lista.ElementAt(i).Predkosc / this.lista.ElementAt(i).Waga;
+            //this.lista.ElementAt(i).Y += ruchx;
+            //this.lista.ElementAt(i).X += ruchy;
+            this.lista.ElementAt(i).Y += ruchy;
+            this.lista.ElementAt(i).X += ruchx;
 
 
         }

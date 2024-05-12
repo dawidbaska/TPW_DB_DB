@@ -2,6 +2,7 @@
 using Logika;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -32,30 +33,35 @@ namespace Prezentacja.Model
 
         }
 
-        public void tworzenie()
+        public void tworzenie(ObservableCollection<Dane.Kula> KulePositions)
         {
             var rand = new Random();
-            float predkosc = 1;
+            float predkosc = 5;
             int srednica = 20;
-            float waga = 10;
             logika.ListaClear();
             Debug.WriteLine(this.Ile);
             for(int i=0; i<this.ilekul; i++) {
+                float waga = rand.Next(1, 5);
                 this.logika.DodajKula(predkosc, srednica, waga);
+                KulePositions.Add(this.logika.GetKula(i));
                 int r = this.logika.GetKula(i).Srednica;
                 this.logika.LosujStart(0, plansza.W - r - 2 * this.BorderThickness + 1, 0, plansza.H - r - 2 * this.BorderThickness + 1, i);
+                int numer = i;
+                Task task = Task.Run(async () =>
+                {
+                    while (true)
+                    {
+                        this.ruch(numer);
+                        await Task.Delay(50);  
+                    }
+                });
             }
         }
 
-        public void ruch()
+        public void ruch(int i)
         {
-   
-            for (int i = 0; i < this.ilekul; i++)
-            {
-              int r = this.logika.GetKula(i).Srednica;
-              this.logika.LosujNowaPozycja(0, plansza.W - r - 2 * this.BorderThickness + 1, 0, plansza.H - r - 2 * this.BorderThickness + 1, i);
-             }
-     
+            int r = this.logika.GetKula(i).Srednica;
+            this.logika.LosujNowaPozycja(0, plansza.W - r - 2 * this.BorderThickness + 1, 0, plansza.H - r - 2 * this.BorderThickness + 1, i);
         }
 
         public int listaSize()

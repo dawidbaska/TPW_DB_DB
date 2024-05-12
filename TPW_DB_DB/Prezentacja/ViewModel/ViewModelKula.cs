@@ -3,6 +3,7 @@ using Prezentacja.Model;
 using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Threading.Tasks;
 using System.Windows;
 
@@ -63,24 +64,11 @@ namespace Prezentacja.ViewModel
 
         public async void StartGry()
         {
-            ModelKula.tworzenie();
-            while (true)
-            {
-                await Task.Delay(50);
-                RuchKul();
-            }
+            KulePositions.Clear();
+            Debug.WriteLine(ModelKula.Ile);
+            ModelKula.tworzenie(this.KulePositions);
         }
 
-        public void RuchKul()
-        {
-            ModelKula.ruch();
-            KulePositions.Clear();
-            for (int i = 0; i < ModelKula.Ile; i++)
-            {
-                Dane.Kula kula = ModelKula.getKula(i);
-                KulePositions.Add(kula);
-            }
-        }
 
         private void OnPropertyChanged(string propertyName)
         {
