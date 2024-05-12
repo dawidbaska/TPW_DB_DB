@@ -65,7 +65,6 @@ namespace Prezentacja.ViewModel
         public async void StartGry()
         {
             KulePositions.Clear();
-            Debug.WriteLine(ModelKula.Ile);
             ModelKula.tworzenie(this.KulePositions);
         }
 

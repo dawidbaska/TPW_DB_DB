@@ -40,12 +40,18 @@ namespace Logika
                 this.lista.ElementAt(i).Wektor_Y *= -1;
             float ruchx = this.lista.ElementAt(i).Wektor_X * this.lista.ElementAt(i).Predkosc / this.lista.ElementAt(i).Waga;
             float ruchy = this.lista.ElementAt(i).Wektor_Y * this.lista.ElementAt(i).Predkosc / this.lista.ElementAt(i).Waga;
-            //this.lista.ElementAt(i).Y += ruchx;
-            //this.lista.ElementAt(i).X += ruchy;
-            this.lista.ElementAt(i).Y += ruchy;
-            this.lista.ElementAt(i).X += ruchx;
-
-
+            if (this.lista.ElementAt(i).Y + ruchy < y1)
+                this.lista.ElementAt(i).Y = 0;
+            else if(this.lista.ElementAt(i).Y + ruchy > y2)
+                this.lista.ElementAt(i).Y = y2;
+            else
+                this.lista.ElementAt(i).Y += ruchy;
+            if (this.lista.ElementAt(i).X + ruchx < x1)
+                this.lista.ElementAt(i).X = 0;
+            else if (this.lista.ElementAt(i).X + ruchx > x2)
+                this.lista.ElementAt(i).X = x2;
+            else
+                this.lista.ElementAt(i).X += ruchx;
         }
 
         public override void LosujStart(int x1, int x2, int y1, int y2, int i)
