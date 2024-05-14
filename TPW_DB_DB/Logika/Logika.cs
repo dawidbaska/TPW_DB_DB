@@ -61,7 +61,45 @@ namespace Logika
 
         public override void SprawdzKolizje(int i, List<Dane.Kula> lista)
         {
-        
+            barrier.SignalAndWait();
+            lock (lista)
+            {
+                for (int j = 0; j < lista.Count; j++)
+                {
+                    if (j == i)
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        double dx = lista.ElementAt(j).X - lista.ElementAt(i).X;
+                        double dy = lista.ElementAt(j).Y - lista.ElementAt(i).Y;
+                        double d = Math.Sqrt(dx * dx + dy * dy);
+
+                        if (d < lista.ElementAt(i).Srednica)
+                        {
+                            // wektor prostopadly do powierzchnni kolizji 
+                            double w_p_X = dx / d;
+                            double w_p_Y = dy / d;
+
+                            // liczymy miare rownoleglosci wektorow kuli a b i wektora prostopadlego i sprawdzamy czy kule sa na kursie kolizyjnym >0 tak <0 nie
+                            double miara_rowno = (lista.ElementAt(i).Wektor_X - lista.ElementAt(j).Wektor_X) * w_p_X + (lista.ElementAt(i).Wektor_Y - lista.ElementAt(j).Wektor_Y) * w_p_Y;
+                            if (miara_rowno > 0)
+                            {
+                                double zmiana_predkosci = 2 * miara_rowno / (lista.ElementAt(i).Waga + lista.ElementAt(j).Waga);
+                                double nowyX = zmiana_predkosci * w_p_X;
+                                double nowyY = zmiana_predkosci * w_p_Y;
+
+                                lista.ElementAt(i).Wektor_X -= nowyX;
+                                lista.ElementAt(i).Wektor_Y -= nowyY;
+                                lista.ElementAt(j).Wektor_X += nowyX;
+                                lista.ElementAt(j).Wektor_Y += nowyY;
+                            }
+                        }
+                    }
+                }
+            }
+            barrier.SignalAndWait();
         }
 
         public override void LosujStart(int x1, int x2, int y1, int y2, int i)

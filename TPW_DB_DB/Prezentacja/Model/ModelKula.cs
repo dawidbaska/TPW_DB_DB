@@ -36,11 +36,11 @@ namespace Prezentacja.Model
         {
             this.cancellationTokenSource = new CancellationTokenSource();
             var rand = new Random();
-            double predkosc = 1;
             int srednica = 20;
             logika.ListaClear();
             logika.initBarier(this.ilekul);
             for(int i=0; i<this.ilekul; i++) {
+                double predkosc = rand.Next(1,6);
                 double waga = 1;
                 this.logika.DodajKula(predkosc, srednica, waga);
                 KulePositions.Add(this.logika.GetKula(i));
