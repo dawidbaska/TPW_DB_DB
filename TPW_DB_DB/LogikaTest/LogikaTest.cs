@@ -52,14 +52,16 @@ namespace LogikaTest
         public void TestLosujNowaPozycja()
         {
             Logika.LogikaAPI kule = new Logika.Logika(Dane.DaneAPI.Stworz());
+            kule.initBarier(1);
             kule.DodajKula(10,10,10);
+            kule.LosujStart(0, 100, 0, 100, 0);
             Dane.Kula kula = kule.GetKula(0);
             kula.X = -1;
             kula.Y = -2;
-            kule.LosujStart(0, 100, 0, 100, 0);
+            kule.LosujNowaPozycja(0, 100, 0, 100, 0);
             Dane.Kula kula1 = kule.GetKula(0);
-            Assert.IsTrue(kula.X >= 0 && kula.X <= 100);
-            Assert.IsTrue(kula.Y >= 0 && kula.Y <= 100);
+            Assert.IsTrue(kula1.X >= 0 && kula1.X <= 100);
+            Assert.IsTrue(kula1.Y >= 0 && kula1.Y <= 100);
         }
     }
 }
