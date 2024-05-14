@@ -61,38 +61,7 @@ namespace Logika
 
         public override void SprawdzKolizje(int i, List<Dane.Kula> lista)
         {
-            barrier.SignalAndWait();
-            lock (lista)
-            {
-                for(int j = 0; j < lista.Count; j++)
-                {
-                    if(j == i)
-                    {
-                        continue;
-                    }
-                    else
-                    {
-                      if(Math.Abs(lista.ElementAt(i).X - lista.ElementAt(j).X) <= lista.ElementAt(i).Srednica && Math.Abs(lista.ElementAt(i).Y - lista.ElementAt(j).Y) <= lista.ElementAt(i).Srednica)
-                        {
-                            double Va = Math.Sqrt((lista.ElementAt(i).Wektor_X * lista.ElementAt(i).Wektor_X) + (lista.ElementAt(i).Wektor_Y*lista.ElementAt(i).Wektor_Y));
-                            double Vb = Math.Sqrt((lista.ElementAt(j).Wektor_X * lista.ElementAt(j).Wektor_X) + (lista.ElementAt(j).Wektor_Y * lista.ElementAt(j).Wektor_Y));
-                            double sinA = lista.ElementAt(i).Wektor_Y / Va;
-                            double cosA = lista.ElementAt(i).Wektor_X / Va;
-                            double nowy_wX = (Va * (lista.ElementAt(i).Waga - lista.ElementAt(j).Waga) + 2 * lista.ElementAt(j).Waga * Vb * cosA) / (lista.ElementAt(i).Waga + lista.ElementAt(j).Waga);
-                            double nowy_wY = (2 * (lista.ElementAt(i).Waga + lista.ElementAt(j).Waga) * Va * sinA) / (lista.ElementAt(i).Waga + lista.ElementAt(j).Waga);
-
-                       
-                            Debug.WriteLine(nowy_wX);
-                            Debug.WriteLine(nowy_wY);
-
-
-                            lista.ElementAt(i).Wektor_X = nowy_wX;
-                            lista.ElementAt(i).Wektor_Y = nowy_wY;
-                        }
-                    }
-                }
-            }
-            barrier.SignalAndWait();
+        
         }
 
         public override void LosujStart(int x1, int x2, int y1, int y2, int i)
