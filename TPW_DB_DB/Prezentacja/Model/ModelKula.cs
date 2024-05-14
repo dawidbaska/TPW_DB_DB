@@ -39,7 +39,7 @@ namespace Prezentacja.Model
             float predkosc = 1;
             int srednica = 20;
             logika.ListaClear();
-            Debug.WriteLine(this.Ile);
+            logika.initBarier(this.ilekul);
             for(int i=0; i<this.ilekul; i++) {
                 float waga = 1;
                 this.logika.DodajKula(predkosc, srednica, waga);

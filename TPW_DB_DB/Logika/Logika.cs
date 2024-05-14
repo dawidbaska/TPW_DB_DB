@@ -70,7 +70,7 @@ namespace Logika
                     }
                     else
                     {
-                      if(Math.Abs(lista.ElementAt(i).X - lista.ElementAt(j).X) <= lista.ElementAt(i).Srednica-4 && Math.Abs(lista.ElementAt(i).Y - lista.ElementAt(j).Y) <= lista.ElementAt(i).Srednica-4)
+                      if(Math.Abs(lista.ElementAt(i).X - lista.ElementAt(j).X) <= lista.ElementAt(i).Srednica && Math.Abs(lista.ElementAt(i).Y - lista.ElementAt(j).Y) <= lista.ElementAt(i).Srednica)
                         {
                             lista.ElementAt(i).Wektor_X *= -1;
                             lista.ElementAt(i).Wektor_Y *= -1;
@@ -91,8 +91,6 @@ namespace Logika
         public override void DodajKula(float predkosc, int srednica, float waga)
         {
             this.lista.Add(daneapi.KulaStworz(predkosc, srednica, waga));
-            this.barrier = new Barrier(this.lista.Count);
-           
         }
 
         public override Dane.Kula GetKula(int i)
@@ -118,6 +116,11 @@ namespace Logika
             plansza.H = h;
             plansza.BT = bt;
             return plansza;
+        }
+
+        public override void initBarier(int i)
+        {
+            this.barrier = new Barrier(i);
         }
     }
 }

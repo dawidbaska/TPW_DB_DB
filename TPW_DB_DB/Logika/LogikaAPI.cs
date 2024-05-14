@@ -21,5 +21,6 @@ namespace Logika
         }
         public abstract Dane.Plansza StworzPlansze(int w, int h, int bt);
         public abstract void SprawdzKolizje(int i, List<Dane.Kula> lista);
+        public abstract void initBarier(int ile);
     }
 }
