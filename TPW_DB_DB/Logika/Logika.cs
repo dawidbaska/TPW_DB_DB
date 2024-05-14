@@ -8,6 +8,7 @@ namespace Logika
     {
         private List<Dane.Kula> lista = new List<Dane.Kula> { };
         private Dane.DaneAPI daneapi;
+        private Barrier barrier;
 
         public Logika(DaneAPI daneapi)
         {
@@ -52,6 +53,32 @@ namespace Logika
                 this.lista.ElementAt(i).X = x2;
             else
                 this.lista.ElementAt(i).X += ruchx;
+            SprawdzKolizje(i, this.lista);
+
+        }
+
+        public override void SprawdzKolizje(int i, List<Dane.Kula> lista)
+        {
+            barrier.SignalAndWait();
+            lock (lista)
+            {
+                for(int j = 0; j < lista.Count; j++)
+                {
+                    if(j == i)
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                      if(Math.Abs(lista.ElementAt(i).X - lista.ElementAt(j).X) <= lista.ElementAt(i).Srednica-4 && Math.Abs(lista.ElementAt(i).Y - lista.ElementAt(j).Y) <= lista.ElementAt(i).Srednica-4)
+                        {
+                            lista.ElementAt(i).Wektor_X *= -1;
+                            lista.ElementAt(i).Wektor_Y *= -1;
+                        }
+                    }
+                }
+            }
+            barrier.SignalAndWait();
         }
 
         public override void LosujStart(int x1, int x2, int y1, int y2, int i)
@@ -64,6 +91,8 @@ namespace Logika
         public override void DodajKula(float predkosc, int srednica, float waga)
         {
             this.lista.Add(daneapi.KulaStworz(predkosc, srednica, waga));
+            this.barrier = new Barrier(this.lista.Count);
+           
         }
 
         public override Dane.Kula GetKula(int i)
