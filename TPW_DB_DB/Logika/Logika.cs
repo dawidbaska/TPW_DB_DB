@@ -72,12 +72,12 @@ namespace Logika
                     }
                     else
                     {
-                        double dx = lista.ElementAt(j).X - lista.ElementAt(i).X;
-                        double dy = lista.ElementAt(j).Y - lista.ElementAt(i).Y;
-                        double d = Math.Sqrt(dx * dx + dy * dy);
-
-                        if (d < lista.ElementAt(i).Srednica)
+                     
+                        if (Math.Abs(this.lista.ElementAt(i).X - lista.ElementAt(j).X) <= this.lista.ElementAt(i).Srednica && Math.Abs(this.lista.ElementAt(i).Y - lista.ElementAt(j).Y) <= this.lista.ElementAt(i).Srednica)
                         {
+                            double dx = lista.ElementAt(j).X - lista.ElementAt(i).X;
+                            double dy = lista.ElementAt(j).Y - lista.ElementAt(i).Y;
+                            double d = Math.Sqrt(dx * dx + dy * dy);
                             // wektor prostopadly do powierzchnni kolizji 
                             double w_p_X = dx / d;
                             double w_p_Y = dy / d;
@@ -90,10 +90,10 @@ namespace Logika
                                 double nowyX = zmiana_predkosci * w_p_X;
                                 double nowyY = zmiana_predkosci * w_p_Y;
 
-                                lista.ElementAt(i).Wektor_X -= nowyX;
-                                lista.ElementAt(i).Wektor_Y -= nowyY;
-                                lista.ElementAt(j).Wektor_X += nowyX;
-                                lista.ElementAt(j).Wektor_Y += nowyY;
+                                this.lista.ElementAt(i).Wektor_X -= nowyX;
+                                this.lista.ElementAt(i).Wektor_Y -= nowyY;
+                                this.lista.ElementAt(j).Wektor_X += nowyX;
+                                this.lista.ElementAt(j).Wektor_Y += nowyY;
                             }
                         }
                     }
@@ -105,8 +105,23 @@ namespace Logika
         public override void LosujStart(int x1, int x2, int y1, int y2, int i)
         {
             var rand = new Random();
-            this.lista.ElementAt(i).X = rand.Next(x1,x2);
-            this.lista.ElementAt(i).Y = rand.Next(y1, y2);
+            bool flaga = false;
+            while (flaga == false)
+            {
+                flaga = true;
+                this.lista.ElementAt(i).X = rand.Next(x1, x2);
+                this.lista.ElementAt(i).Y = rand.Next(y1, y2);
+                for (int j = 0; j < this.lista.Count; j++)
+                {
+                    if (i != j)
+                    {
+                        if (Math.Abs(this.lista.ElementAt(i).X - this.lista.ElementAt(j).X) < 2 * this.lista.ElementAt(i).Srednica && Math.Abs(this.lista.ElementAt(i).Y - this.lista.ElementAt(j).Y) < 2 * this.lista.ElementAt(i).Srednica)
+                        {
+                            flaga = false;
+                        }
+                    }
+                }
+            }
         }
 
         public override void DodajKula(double predkosc, int srednica, double waga)
