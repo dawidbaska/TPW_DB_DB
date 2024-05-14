@@ -16,7 +16,7 @@ namespace Prezentacja.Model
         private int ilekul = 1;
         private Logika.LogikaAPI logika;
         private Dane.Plansza plansza;
-       
+        private CancellationTokenSource cancellationTokenSource;
 
         public int Ile { get => ilekul; set => ilekul = value; }
         public int Width { get => plansza.W; set => plansza.W = value; }
@@ -30,11 +30,11 @@ namespace Prezentacja.Model
         {
             this.logika = logika;
             this.plansza = this.logika.StworzPlansze(600, 300, 4);
-
         }
 
         public void tworzenie(ObservableCollection<Dane.Kula> KulePositions)
         {
+            this.cancellationTokenSource = new CancellationTokenSource();
             var rand = new Random();
             double predkosc = 1;
             int srednica = 20;
@@ -49,7 +49,7 @@ namespace Prezentacja.Model
                 int numer = i;
                 Task task = Task.Run(async () =>
                 {
-                    while (true)
+                    while (!cancellationTokenSource.Token.IsCancellationRequested)
                     {
                         this.ruch(numer);
                         await Task.Delay(50);  
@@ -73,6 +73,11 @@ namespace Prezentacja.Model
         {
             Dane.Kula kula = this.logika.GetKula(i);
             return kula;
+        }
+
+        public async Task ZabijWszystkieWatki()
+        {
+            cancellationTokenSource.Cancel();
         }
     }
 
