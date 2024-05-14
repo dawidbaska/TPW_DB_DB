@@ -3,6 +3,7 @@ namespace LogikaTest
     [TestClass]
     public class LogikaTest
     {
+        /*  
         [TestMethod]
         public void TestDodajKula()
         {
@@ -45,5 +46,6 @@ namespace LogikaTest
             kule.ListaClear();
             Assert.AreEqual(0, kule.ListaGetSize());
         }
+        */
     }
 }

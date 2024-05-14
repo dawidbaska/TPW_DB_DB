@@ -12,6 +12,7 @@ namespace Prezentacja.ViewModel
     internal class ViewModelKula : INotifyPropertyChanged
     {
         public Start Button { get; set; }
+        public Stop Button2 { get; set; }
         public ObservableCollection<Dane.Kula> KulePositions { get; set; }
         public ModelKula ModelKula = new ModelKula(Logika.LogikaAPI.Stworz(Dane.DaneAPI.Stworz()));
         public Dane.Plansza plansza;
@@ -20,6 +21,7 @@ namespace Prezentacja.ViewModel
         {
             KulePositions = new ObservableCollection<Dane.Kula>();
             Button = new Start(this);
+            Button2 = new Stop(this);
         }
 
         public int iKul
@@ -68,6 +70,11 @@ namespace Prezentacja.ViewModel
             ModelKula.tworzenie(this.KulePositions);
         }
 
+        public async void Stop()
+        {
+            this.KulePositions.Clear();
+            ModelKula.ZabijWszystkieWatki();
+        }
 
         private void OnPropertyChanged(string propertyName)
         {
