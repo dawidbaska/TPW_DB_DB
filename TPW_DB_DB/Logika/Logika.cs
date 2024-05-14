@@ -64,30 +64,37 @@ namespace Logika
             barrier.SignalAndWait();
             lock (lista)
             {
-                for(int j = 0; j < lista.Count; j++)
+                for (int j = 0; j < lista.Count; j++)
                 {
-                    if(j == i)
+                    if (j == i)
                     {
                         continue;
                     }
                     else
                     {
-                      if(Math.Abs(lista.ElementAt(i).X - lista.ElementAt(j).X) <= lista.ElementAt(i).Srednica && Math.Abs(lista.ElementAt(i).Y - lista.ElementAt(j).Y) <= lista.ElementAt(i).Srednica)
+                        double dx = lista.ElementAt(j).X - lista.ElementAt(i).X;
+                        double dy = lista.ElementAt(j).Y - lista.ElementAt(i).Y;
+                        double d = Math.Sqrt(dx * dx + dy * dy);
+
+                        if (d < lista.ElementAt(i).Srednica)
                         {
-                            double Va = Math.Sqrt((lista.ElementAt(i).Wektor_X * lista.ElementAt(i).Wektor_X) + (lista.ElementAt(i).Wektor_Y*lista.ElementAt(i).Wektor_Y));
-                            double Vb = Math.Sqrt((lista.ElementAt(j).Wektor_X * lista.ElementAt(j).Wektor_X) + (lista.ElementAt(j).Wektor_Y * lista.ElementAt(j).Wektor_Y));
-                            double sinA = lista.ElementAt(i).Wektor_Y / Va;
-                            double cosA = lista.ElementAt(i).Wektor_X / Va;
-                            double nowy_wX = (Va * (lista.ElementAt(i).Waga - lista.ElementAt(j).Waga) + 2 * lista.ElementAt(j).Waga * Vb * cosA) / (lista.ElementAt(i).Waga + lista.ElementAt(j).Waga);
-                            double nowy_wY = (2 * (lista.ElementAt(i).Waga + lista.ElementAt(j).Waga) * Va * sinA) / (lista.ElementAt(i).Waga + lista.ElementAt(j).Waga);
+                            // wektor prostopadly do powierzchnni kolizji 
+                            double w_p_X = dx / d;
+                            double w_p_Y = dy / d;
 
-                       
-                            Debug.WriteLine(nowy_wX);
-                            Debug.WriteLine(nowy_wY);
+                            // liczymy miare rownoleglosci wektorow kuli a b i wektora prostopadlego i sprawdzamy czy kule sa na kursie kolizyjnym >0 tak <0 nie
+                            double miara_rowno = (lista.ElementAt(i).Wektor_X - lista.ElementAt(j).Wektor_X) * w_p_X + (lista.ElementAt(i).Wektor_Y - lista.ElementAt(j).Wektor_Y) * w_p_Y;
+                            if (miara_rowno > 0)
+                            {
+                                double zmiana_predkosci = 2 * miara_rowno / (lista.ElementAt(i).Waga + lista.ElementAt(j).Waga);
+                                double nowyX = zmiana_predkosci * w_p_X;
+                                double nowyY = zmiana_predkosci * w_p_Y;
 
-
-                            lista.ElementAt(i).Wektor_X = nowy_wX;
-                            lista.ElementAt(i).Wektor_Y = nowy_wY;
+                                lista.ElementAt(i).Wektor_X -= nowyX;
+                                lista.ElementAt(i).Wektor_Y -= nowyY;
+                                lista.ElementAt(j).Wektor_X += nowyX;
+                                lista.ElementAt(j).Wektor_Y += nowyY;
+                            }
                         }
                     }
                 }
