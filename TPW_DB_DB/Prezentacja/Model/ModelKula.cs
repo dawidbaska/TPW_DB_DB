@@ -36,12 +36,12 @@ namespace Prezentacja.Model
         public void tworzenie(ObservableCollection<Dane.Kula> KulePositions)
         {
             var rand = new Random();
-            float predkosc = 1;
+            double predkosc = 1;
             int srednica = 20;
             logika.ListaClear();
             logika.initBarier(this.ilekul);
             for(int i=0; i<this.ilekul; i++) {
-                float waga = 1;
+                double waga = 1;
                 this.logika.DodajKula(predkosc, srednica, waga);
                 KulePositions.Add(this.logika.GetKula(i));
                 int r = this.logika.GetKula(i).Srednica;
