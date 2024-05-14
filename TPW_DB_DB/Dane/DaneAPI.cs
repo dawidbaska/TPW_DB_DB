@@ -16,5 +16,5 @@ namespace Dane
 
         public abstract Plansza PlanszaStworz();
     }
-    
+
 }
