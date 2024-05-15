@@ -10,7 +10,6 @@ namespace Logika
     {
         private List<Dane.Kula> lista = new List<Dane.Kula> { };
         private Dane.DaneAPI daneapi;
-        private Barrier barrier;
 
         public Logika(DaneAPI daneapi)
         {
@@ -61,7 +60,6 @@ namespace Logika
 
         public override void SprawdzKolizje(int i, List<Dane.Kula> lista)
         {
-            barrier.SignalAndWait();
             lock (lista)
             {
                 for (int j = 0; j < lista.Count; j++)
@@ -99,7 +97,6 @@ namespace Logika
                     }
                 }
             }
-            barrier.SignalAndWait();
         }
 
         public override void LosujStart(int x1, int x2, int y1, int y2, int i)
@@ -152,11 +149,6 @@ namespace Logika
             plansza.H = h;
             plansza.BT = bt;
             return plansza;
-        }
-
-        public override void initBarier(int i)
-        {
-            this.barrier = new Barrier(i);
         }
     }
 }
