@@ -32,6 +32,18 @@ namespace Prezentacja.Model
             this.plansza = this.logika.StworzPlansze(600, 300, 4);
         }
 
+        public void uruchomLogger()
+        {
+            Task task = Task.Run(async () =>
+            {
+                while (!cancellationTokenSource.Token.IsCancellationRequested)
+                {
+                    
+                    await Task.Delay(50);
+                }
+            });
+        }
+
         public void tworzenie(ObservableCollection<Dane.Kula> KulePositions)
         {
             this.cancellationTokenSource = new CancellationTokenSource();

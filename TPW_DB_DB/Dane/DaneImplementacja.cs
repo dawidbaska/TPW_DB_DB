@@ -13,9 +13,15 @@ namespace Dane
             return new Kula(predkosc, srednica, waga);
         }
 
+        public override Logger LoggerStworz(string filePath)
+        {
+            return new Logger(filePath);
+        }
+
         public override Plansza PlanszaStworz()
         {
             return new Plansza();
         }
+
     }
 }

@@ -15,6 +15,7 @@ namespace Dane
         public abstract Kula KulaStworz(double predkosc, int srednica, double waga);
 
         public abstract Plansza PlanszaStworz();
+        public abstract Logger LoggerStworz(string filePath);
     }
 
 }

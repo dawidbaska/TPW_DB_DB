@@ -143,5 +143,10 @@ namespace Logika
         {
             this.barrier = new Barrier(i);
         }
+
+        public override Logger stworzLogger(string filePath)
+        {
+            return new Logger(filePath);
+        }
     }
 }
