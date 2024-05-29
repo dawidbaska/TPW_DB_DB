@@ -76,7 +76,10 @@ namespace Dane
         public void koniecZapisow()
         {
             using (StreamWriter file = new StreamWriter(filePath, true))
-            {   
+            {   while(cq.Count > 0)
+                {
+                    zapiszLogi();
+                }
                 file.WriteLine("]");
             }
         }
