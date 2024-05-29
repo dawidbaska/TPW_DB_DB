@@ -50,9 +50,8 @@ namespace Prezentacja.Model
             var rand = new Random();
             int srednica = 20;
             logika.ListaClear();
-            logika.initBarier(this.ilekul);
             for(int i=0; i<this.ilekul; i++) {
-                double predkosc = rand.Next(1,6);
+                double predkosc = rand.Next(4,6);
                 double waga = 1;
                 this.logika.DodajKula(predkosc, srednica, waga);
                 KulePositions.Add(this.logika.GetKula(i));

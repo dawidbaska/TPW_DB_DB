@@ -52,7 +52,6 @@ namespace LogikaTest
         public void TestLosujNowaPozycja()
         {
             Logika.LogikaAPI kule = new Logika.Logika(Dane.DaneAPI.Stworz());
-            kule.initBarier(1);
             kule.DodajKula(10,10,10);
             kule.LosujStart(0, 100, 0, 100, 0);
             Dane.Kula kula = kule.GetKula(0);
