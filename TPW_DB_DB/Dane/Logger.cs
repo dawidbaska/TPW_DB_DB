@@ -34,16 +34,15 @@ namespace Dane
             string wzgledna = @"..\..\..\..\Logi\";
             string cala = Path.Combine(folder, wzgledna, this.filePath);
             this.filePath = cala;
-            string sciezkafolder = Path.GetDirectoryName(cala);
-            if (!Directory.Exists(sciezkafolder))
+            string directoryPath = Path.GetDirectoryName(cala);
+            if (!Directory.Exists(directoryPath))
             {
-                Directory.CreateDirectory(sciezkafolder);
+                Directory.CreateDirectory(directoryPath);
             }
             if (!File.Exists(this.filePath))
             {
                 using (FileStream fs = File.Create(this.filePath))
                 {
-                   
                 }
             }
         }
@@ -54,16 +53,33 @@ namespace Dane
             {
                 while (cq.TryDequeue(out string log))
                 {
-                    string jsonLog = JsonSerializer.Serialize(log);
+                    string timestamp = log.Substring(0, 23);
+                    string message = log.Substring(25);
+                    var logEntry = new { timestamp = timestamp, message = message };
+                    string jsonLog = JsonSerializer.Serialize(logEntry);
                     using (StreamWriter file = new StreamWriter(filePath, true))
-                    {
+                    {   FileInfo fileInfo = new FileInfo(filePath);
+                        if(fileInfo.Length == 0)
+                        {
+                            file.WriteLine("[");
+                        }
+                        if (fileInfo.Length > 2)
+                        {
+                            file.WriteLine(",");
+                        }
                         file.WriteLine(jsonLog);
                     }
                 }
             }
         }
 
-
+        public void koniecZapisow()
+        {
+            using (StreamWriter file = new StreamWriter(filePath, true))
+            {   
+                file.WriteLine("]");
+            }
+        }
        
     }
 }

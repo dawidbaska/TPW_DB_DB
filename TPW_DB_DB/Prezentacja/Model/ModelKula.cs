@@ -30,7 +30,6 @@ namespace Prezentacja.Model
         {
             this.logika = logika;
             this.plansza = this.logika.StworzPlansze(600, 300, 4);
-            logger_start();
         }
 
         public void logger_start()
@@ -46,27 +45,17 @@ namespace Prezentacja.Model
         {
             Task logowanie = Task.Run(() =>
             {
-                while (true)
+                while (!cancellationTokenSource.Token.IsCancellationRequested)
                 {
                     this.logika.ZapiszLogi();
                 }
-            });
-        }
-
-        public void uruchomLogger()
-        {
-            Task task = Task.Run(async () =>
-            {
-                while (!cancellationTokenSource.Token.IsCancellationRequested)
-                {
-                    
-                    await Task.Delay(50);
-                }
+                this.logika.KoniecZapisow();
             });
         }
 
         public void tworzenie(ObservableCollection<Dane.Kula> KulePositions)
         {
+            logger_start();
             this.cancellationTokenSource = new CancellationTokenSource();
             var rand = new Random();
             int srednica = 20;

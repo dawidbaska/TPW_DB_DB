@@ -27,5 +27,7 @@ namespace Logika
         public abstract void DodajLogi(string wiadomosc);
 
         public abstract void ZapiszLogi();
+
+        public abstract void KoniecZapisow();
     }
 }

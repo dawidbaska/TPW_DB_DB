@@ -15,6 +15,11 @@ namespace Dane
             this.logger.Dodaj_logi(wiadomosc);
         }
 
+        public override void KoniecZapisow()
+        {
+            this.logger.koniecZapisow();
+        }
+
         public override Kula KulaStworz(double predkosc, int srednica, double waga)
         {
             return new Kula(predkosc, srednica, waga);
