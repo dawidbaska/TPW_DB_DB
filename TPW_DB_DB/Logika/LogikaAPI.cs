@@ -22,6 +22,10 @@ namespace Logika
         public abstract Dane.Plansza StworzPlansze(int w, int h, int bt);
         public abstract void SprawdzKolizje(int i, List<Dane.Kula> lista);
 
-        public abstract Dane.Logger stworzLogger(string filePath);
+        public abstract void stworzLogger(string filePath);
+
+        public abstract void DodajLogi(string wiadomosc);
+
+        public abstract void ZapiszLogi();
     }
 }

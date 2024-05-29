@@ -9,9 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logika", "Logika\Logika.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prezentacja", "Prezentacja\Prezentacja.csproj", "{D8ECB032-68EF-445D-861E-EEC08A42FFBF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestDane", "TestDane\TestDane.csproj", "{BD50AC35-9CEF-4D93-9A5D-39406E799BBB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestDane", "TestDane\TestDane.csproj", "{BD50AC35-9CEF-4D93-9A5D-39406E799BBB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogikaTest", "LogikaTest\LogikaTest.csproj", "{B3FEEEBE-3555-4A43-9FCA-DAF9AEC3D4CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogikaTest", "LogikaTest\LogikaTest.csproj", "{B3FEEEBE-3555-4A43-9FCA-DAF9AEC3D4CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

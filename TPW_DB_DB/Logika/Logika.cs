@@ -119,6 +119,8 @@ namespace Logika
                     }
                 }
             }
+            string wiadomosc = $"{DateTime.Now}: Kula '{i}' została stworzona na pozycjach  {this.lista.ElementAt(i).X}; {this.lista.ElementAt(i).Y} ";
+            DodajLogi(wiadomosc);
         }
 
         public override void DodajKula(double predkosc, int srednica, double waga)
@@ -153,9 +155,19 @@ namespace Logika
 
         
 
-        public override Logger stworzLogger(string filePath)
+        public override void stworzLogger(string filePath)
         {
-            return new Logger(filePath);
+            this.daneapi.LoggerStworz(filePath);
+        }
+
+        public override void DodajLogi(string wiadomosc)
+        {
+            this.daneapi.DodajLogi(wiadomosc);
+        }
+
+        public override void ZapiszLogi()
+        {
+            this.daneapi.ZapiszLogi();
         }
     }
 }

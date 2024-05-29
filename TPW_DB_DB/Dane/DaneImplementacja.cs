@@ -8,14 +8,21 @@ namespace Dane
 {
     public class DaneImplementacja : DaneAPI
     {
+        private Logger logger;
+
+        public override void DodajLogi(string wiadomosc)
+        {
+            this.logger.Dodaj_logi(wiadomosc);
+        }
+
         public override Kula KulaStworz(double predkosc, int srednica, double waga)
         {
             return new Kula(predkosc, srednica, waga);
         }
 
-        public override Logger LoggerStworz(string filePath)
+        public override void LoggerStworz(string filePath)
         {
-            return new Logger(filePath);
+           this.logger = new Logger(filePath);
         }
 
         public override Plansza PlanszaStworz()
@@ -23,5 +30,9 @@ namespace Dane
             return new Plansza();
         }
 
+        public override void ZapiszLogi()
+        {
+            this.logger.zapiszLogi();
+        }
     }
 }

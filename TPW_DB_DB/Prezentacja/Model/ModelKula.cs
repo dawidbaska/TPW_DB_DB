@@ -30,6 +30,27 @@ namespace Prezentacja.Model
         {
             this.logika = logika;
             this.plansza = this.logika.StworzPlansze(600, 300, 4);
+            logger_start();
+        }
+
+        public void logger_start()
+        {
+            DateTime data_czas = DateTime.Now;
+            string data_czas_string = data_czas.ToString("yyyy-MM-dd_HH-mm-ss");
+            string nazwaPliku = $"{data_czas_string}.json";
+            this.logika.stworzLogger(nazwaPliku);
+            ZapiszLogi();
+        }
+
+        public void ZapiszLogi()
+        {
+            Task logowanie = Task.Run(() =>
+            {
+                while (true)
+                {
+                    this.logika.ZapiszLogi();
+                }
+            });
         }
 
         public void uruchomLogger()
