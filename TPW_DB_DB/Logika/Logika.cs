@@ -178,7 +178,7 @@ namespace Logika
 
         public override void KoniecZapisow()
         {
-           this.daneapi.KoniecZapisow();
+            this.daneapi.KoniecZapisow();
         }
     }
 }

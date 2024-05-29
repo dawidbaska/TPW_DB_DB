@@ -1,0 +1,657 @@
+[
+{"timestamp":"2024-05-29 14:16:34.179","message":"Kula 0 zostala stworzona na pozycjach 355; 255"}
+,
+{"timestamp":"2024-05-29 14:16:34.181","message":"Kula 1 zostala stworzona na pozycjach 509; 51"}
+,
+{"timestamp":"2024-05-29 14:16:34.181","message":"Kula 2 zostala stworzona na pozycjach 24; 229"}
+,
+{"timestamp":"2024-05-29 14:16:34.181","message":"Kula 3 zostala stworzona na pozycjach 436; 103"}
+,
+{"timestamp":"2024-05-29 14:16:34.181","message":"Kula 4 zostala stworzona na pozycjach 128; 83"}
+,
+{"timestamp":"2024-05-29 14:16:34.181","message":"Kula 5 zostala stworzona na pozycjach 198; 173"}
+,
+{"timestamp":"2024-05-29 14:16:34.184","message":"Kula 6 zostala stworzona na pozycjach 392; 107"}
+,
+{"timestamp":"2024-05-29 14:16:34.184","message":"Kula 7 zostala stworzona na pozycjach 341; 122"}
+,
+{"timestamp":"2024-05-29 14:16:34.186","message":"Kula 4 ruszyla sie na pozycje 132; 79"}
+,
+{"timestamp":"2024-05-29 14:16:34.187","message":"Kula 2 ruszyla sie na pozycje 24; 225"}
+,
+{"timestamp":"2024-05-29 14:16:34.187","message":"Kula 8 zostala stworzona na pozycjach 255; 253"}
+,
+{"timestamp":"2024-05-29 14:16:34.187","message":"Kula 1 ruszyla sie na pozycje 514; 51"}
+,
+{"timestamp":"2024-05-29 14:16:34.187","message":"Kula 3 ruszyla sie na pozycje 440; 99"}
+,
+{"timestamp":"2024-05-29 14:16:34.187","message":"Kula 0 ruszyla sie na pozycje 350; 255"}
+,
+{"timestamp":"2024-05-29 14:16:34.187","message":"Kula 9 zostala stworzona na pozycjach 417; 170"}
+,
+{"timestamp":"2024-05-29 14:16:34.187","message":"Kula 5 ruszyla sie na pozycje 203; 173"}
+,
+{"timestamp":"2024-05-29 14:16:34.192","message":"Kula 6 ruszyla sie na pozycje 396; 107"}
+,
+{"timestamp":"2024-05-29 14:16:34.197","message":"Kula 7 ruszyla sie na pozycje 345; 126"}
+,
+{"timestamp":"2024-05-29 14:16:34.197","message":"Kula 8 ruszyla sie na pozycje 250; 253"}
+,
+{"timestamp":"2024-05-29 14:16:34.197","message":"Kula 9 ruszyla sie na pozycje 413; 166"}
+,
+{"timestamp":"2024-05-29 14:16:34.243","message":"Kula 6 ruszyla sie na pozycje 400; 107"}
+,
+{"timestamp":"2024-05-29 14:16:34.243","message":"Kula 2 ruszyla sie na pozycje 24; 221"}
+,
+{"timestamp":"2024-05-29 14:16:34.243","message":"Kula 3 ruszyla sie na pozycje 444; 95"}
+,
+{"timestamp":"2024-05-29 14:16:34.243","message":"Kula 0 ruszyla sie na pozycje 345; 255"}
+,
+{"timestamp":"2024-05-29 14:16:34.243","message":"Kula 1 ruszyla sie na pozycje 519; 51"}
+,
+{"timestamp":"2024-05-29 14:16:34.243","message":"Kula 4 ruszyla sie na pozycje 136; 75"}
+,
+{"timestamp":"2024-05-29 14:16:34.243","message":"Kula 5 ruszyla sie na pozycje 208; 173"}
+,
+{"timestamp":"2024-05-29 14:16:34.248","message":"Kula 9 ruszyla sie na pozycje 409; 162"}
+,
+{"timestamp":"2024-05-29 14:16:34.248","message":"Kula 8 ruszyla sie na pozycje 245; 253"}
+,
+{"timestamp":"2024-05-29 14:16:34.248","message":"Kula 7 ruszyla sie na pozycje 349; 130"}
+,
+{"timestamp":"2024-05-29 14:16:34.294","message":"Kula 2 ruszyla sie na pozycje 24; 217"}
+,
+{"timestamp":"2024-05-29 14:16:34.294","message":"Kula 5 ruszyla sie na pozycje 213; 173"}
+,
+{"timestamp":"2024-05-29 14:16:34.294","message":"Kula 4 ruszyla sie na pozycje 140; 71"}
+,
+{"timestamp":"2024-05-29 14:16:34.294","message":"Kula 3 ruszyla sie na pozycje 448; 91"}
+,
+{"timestamp":"2024-05-29 14:16:34.294","message":"Kula 0 ruszyla sie na pozycje 340; 255"}
+,
+{"timestamp":"2024-05-29 14:16:34.294","message":"Kula 1 ruszyla sie na pozycje 524; 51"}
+,
+{"timestamp":"2024-05-29 14:16:34.294","message":"Kula 6 ruszyla sie na pozycje 404; 107"}
+,
+{"timestamp":"2024-05-29 14:16:34.299","message":"Kula 7 ruszyla sie na pozycje 353; 134"}
+,
+{"timestamp":"2024-05-29 14:16:34.299","message":"Kula 8 ruszyla sie na pozycje 240; 253"}
+,
+{"timestamp":"2024-05-29 14:16:34.299","message":"Kula 9 ruszyla sie na pozycje 405; 158"}
+,
+{"timestamp":"2024-05-29 14:16:34.344","message":"Kula 1 ruszyla sie na pozycje 529; 51"}
+,
+{"timestamp":"2024-05-29 14:16:34.344","message":"Kula 4 ruszyla sie na pozycje 144; 67"}
+,
+{"timestamp":"2024-05-29 14:16:34.344","message":"Kula 6 ruszyla sie na pozycje 408; 107"}
+,
+{"timestamp":"2024-05-29 14:16:34.344","message":"Kula 2 ruszyla sie na pozycje 24; 213"}
+,
+{"timestamp":"2024-05-29 14:16:34.344","message":"Kula 0 ruszyla sie na pozycje 335; 255"}
+,
+{"timestamp":"2024-05-29 14:16:34.344","message":"Kula 3 ruszyla sie na pozycje 452; 87"}
+,
+{"timestamp":"2024-05-29 14:16:34.344","message":"Kula 5 ruszyla sie na pozycje 218; 173"}
+,
+{"timestamp":"2024-05-29 14:16:34.350","message":"Kula 8 ruszyla sie na pozycje 235; 253"}
+,
+{"timestamp":"2024-05-29 14:16:34.350","message":"Kula 7 ruszyla sie na pozycje 357; 138"}
+,
+{"timestamp":"2024-05-29 14:16:34.350","message":"Kula 9 ruszyla sie na pozycje 401; 154"}
+,
+{"timestamp":"2024-05-29 14:16:34.395","message":"Kula 3 ruszyla sie na pozycje 456; 83"}
+,
+{"timestamp":"2024-05-29 14:16:34.395","message":"Kula 0 ruszyla sie na pozycje 330; 255"}
+,
+{"timestamp":"2024-05-29 14:16:34.395","message":"Kula 2 ruszyla sie na pozycje 24; 209"}
+,
+{"timestamp":"2024-05-29 14:16:34.395","message":"Kula 5 ruszyla sie na pozycje 223; 173"}
+,
+{"timestamp":"2024-05-29 14:16:34.395","message":"Kula 4 ruszyla sie na pozycje 148; 63"}
+,
+{"timestamp":"2024-05-29 14:16:34.395","message":"Kula 1 ruszyla sie na pozycje 534; 51"}
+,
+{"timestamp":"2024-05-29 14:16:34.395","message":"Kula 6 ruszyla sie na pozycje 412; 107"}
+,
+{"timestamp":"2024-05-29 14:16:34.400","message":"Kula 7 ruszyla sie na pozycje 361; 142"}
+,
+{"timestamp":"2024-05-29 14:16:34.400","message":"Kula 9 ruszyla sie na pozycje 397; 150"}
+,
+{"timestamp":"2024-05-29 14:16:34.400","message":"Kula 8 ruszyla sie na pozycje 230; 253"}
+,
+{"timestamp":"2024-05-29 14:16:34.446","message":"Kula 4 ruszyla sie na pozycje 152; 59"}
+,
+{"timestamp":"2024-05-29 14:16:34.446","message":"Kula 2 ruszyla sie na pozycje 24; 205"}
+,
+{"timestamp":"2024-05-29 14:16:34.446","message":"Kula 1 ruszyla sie na pozycje 539; 51"}
+,
+{"timestamp":"2024-05-29 14:16:34.446","message":"Kula 5 ruszyla sie na pozycje 228; 173"}
+,
+{"timestamp":"2024-05-29 14:16:34.446","message":"Kula 6 ruszyla sie na pozycje 416; 107"}
+,
+{"timestamp":"2024-05-29 14:16:34.446","message":"Kula 0 ruszyla sie na pozycje 325; 255"}
+,
+{"timestamp":"2024-05-29 14:16:34.446","message":"Kula 3 ruszyla sie na pozycje 460; 79"}
+,
+{"timestamp":"2024-05-29 14:16:34.451","message":"Kula 9 ruszyla sie na pozycje 393; 146"}
+,
+{"timestamp":"2024-05-29 14:16:34.451","message":"Kula 8 ruszyla sie na pozycje 225; 253"}
+,
+{"timestamp":"2024-05-29 14:16:34.451","message":"Kula 7 ruszyla sie na pozycje 365; 146"}
+,
+{"timestamp":"2024-05-29 14:16:34.497","message":"Kula 3 ruszyla sie na pozycje 464; 75"}
+,
+{"timestamp":"2024-05-29 14:16:34.497","message":"Kula 5 ruszyla sie na pozycje 233; 173"}
+,
+{"timestamp":"2024-05-29 14:16:34.497","message":"Kula 4 ruszyla sie na pozycje 156; 55"}
+,
+{"timestamp":"2024-05-29 14:16:34.497","message":"Kula 6 ruszyla sie na pozycje 420; 107"}
+,
+{"timestamp":"2024-05-29 14:16:34.497","message":"Kula 0 ruszyla sie na pozycje 320; 255"}
+,
+{"timestamp":"2024-05-29 14:16:34.497","message":"Kula 1 ruszyla sie na pozycje 544; 51"}
+,
+{"timestamp":"2024-05-29 14:16:34.497","message":"Kula 2 ruszyla sie na pozycje 24; 201"}
+,
+{"timestamp":"2024-05-29 14:16:34.502","message":"Kula 7 ruszyla sie na pozycje 369; 150"}
+,
+{"timestamp":"2024-05-29 14:16:34.502","message":"Kula 8 ruszyla sie na pozycje 220; 253"}
+,
+{"timestamp":"2024-05-29 14:16:34.502","message":"Kula 9 ruszyla sie na pozycje 389; 142"}
+,
+{"timestamp":"2024-05-29 14:16:34.502","message":"Kula 7 zderzyla sie z kula 9"}
+,
+{"timestamp":"2024-05-29 14:16:34.547","message":"Kula 6 ruszyla sie na pozycje 424; 107"}
+,
+{"timestamp":"2024-05-29 14:16:34.547","message":"Kula 3 ruszyla sie na pozycje 468; 71"}
+,
+{"timestamp":"2024-05-29 14:16:34.547","message":"Kula 0 ruszyla sie na pozycje 315; 255"}
+,
+{"timestamp":"2024-05-29 14:16:34.547","message":"Kula 1 ruszyla sie na pozycje 549; 51"}
+,
+{"timestamp":"2024-05-29 14:16:34.547","message":"Kula 4 ruszyla sie na pozycje 160; 51"}
+,
+{"timestamp":"2024-05-29 14:16:34.547","message":"Kula 2 ruszyla sie na pozycje 24; 197"}
+,
+{"timestamp":"2024-05-29 14:16:34.547","message":"Kula 5 ruszyla sie na pozycje 238; 173"}
+,
+{"timestamp":"2024-05-29 14:16:34.553","message":"Kula 9 ruszyla sie na pozycje 389,13793103448273; 136,3448275862069"}
+,
+{"timestamp":"2024-05-29 14:16:34.553","message":"Kula 8 ruszyla sie na pozycje 215; 253"}
+,
+{"timestamp":"2024-05-29 14:16:34.553","message":"Kula 7 ruszyla sie na pozycje 368,86206896551727; 155,6551724137931"}
+,
+{"timestamp":"2024-05-29 14:16:34.598","message":"Kula 6 ruszyla sie na pozycje 428; 107"}
+,
+{"timestamp":"2024-05-29 14:16:34.598","message":"Kula 0 ruszyla sie na pozycje 310; 255"}
+,
+{"timestamp":"2024-05-29 14:16:34.598","message":"Kula 3 ruszyla sie na pozycje 472; 67"}
+,
+{"timestamp":"2024-05-29 14:16:34.598","message":"Kula 4 ruszyla sie na pozycje 164; 47"}
+,
+{"timestamp":"2024-05-29 14:16:34.598","message":"Kula 5 ruszyla sie na pozycje 243; 173"}
+,
+{"timestamp":"2024-05-29 14:16:34.598","message":"Kula 1 ruszyla sie na pozycje 554; 51"}
+,
+{"timestamp":"2024-05-29 14:16:34.598","message":"Kula 2 ruszyla sie na pozycje 24; 193"}
+,
+{"timestamp":"2024-05-29 14:16:34.604","message":"Kula 8 ruszyla sie na pozycje 210; 253"}
+,
+{"timestamp":"2024-05-29 14:16:34.604","message":"Kula 9 ruszyla sie na pozycje 389,27586206896547; 130,68965517241378"}
+,
+{"timestamp":"2024-05-29 14:16:34.604","message":"Kula 7 ruszyla sie na pozycje 368,72413793103453; 161,31034482758622"}
+,
+{"timestamp":"2024-05-29 14:16:34.649","message":"Kula 3 ruszyla sie na pozycje 476; 63"}
+,
+{"timestamp":"2024-05-29 14:16:34.649","message":"Kula 1 ruszyla sie na pozycje 559; 51"}
+,
+{"timestamp":"2024-05-29 14:16:34.649","message":"Kula 6 ruszyla sie na pozycje 432; 107"}
+,
+{"timestamp":"2024-05-29 14:16:34.649","message":"Kula 5 ruszyla sie na pozycje 248; 173"}
+,
+{"timestamp":"2024-05-29 14:16:34.649","message":"Kula 0 ruszyla sie na pozycje 305; 255"}
+,
+{"timestamp":"2024-05-29 14:16:34.649","message":"Kula 2 ruszyla sie na pozycje 24; 189"}
+,
+{"timestamp":"2024-05-29 14:16:34.649","message":"Kula 4 ruszyla sie na pozycje 168; 43"}
+,
+{"timestamp":"2024-05-29 14:16:34.654","message":"Kula 9 ruszyla sie na pozycje 389,4137931034482; 125,03448275862067"}
+,
+{"timestamp":"2024-05-29 14:16:34.654","message":"Kula 7 ruszyla sie na pozycje 368,5862068965518; 166,96551724137933"}
+,
+{"timestamp":"2024-05-29 14:16:34.654","message":"Kula 8 ruszyla sie na pozycje 205; 253"}
+,
+{"timestamp":"2024-05-29 14:16:34.699","message":"Kula 3 ruszyla sie na pozycje 480; 59"}
+,
+{"timestamp":"2024-05-29 14:16:34.699","message":"Kula 1 ruszyla sie na pozycje 564; 51"}
+,
+{"timestamp":"2024-05-29 14:16:34.699","message":"Kula 6 ruszyla sie na pozycje 436; 107"}
+,
+{"timestamp":"2024-05-29 14:16:34.699","message":"Kula 5 ruszyla sie na pozycje 253; 173"}
+,
+{"timestamp":"2024-05-29 14:16:34.699","message":"Kula 4 ruszyla sie na pozycje 172; 39"}
+,
+{"timestamp":"2024-05-29 14:16:34.699","message":"Kula 0 ruszyla sie na pozycje 300; 255"}
+,
+{"timestamp":"2024-05-29 14:16:34.699","message":"Kula 2 ruszyla sie na pozycje 24; 185"}
+,
+{"timestamp":"2024-05-29 14:16:34.705","message":"Kula 7 ruszyla sie na pozycje 368,44827586206907; 172,62068965517244"}
+,
+{"timestamp":"2024-05-29 14:16:34.705","message":"Kula 9 ruszyla sie na pozycje 389,55172413793093; 119,37931034482756"}
+,
+{"timestamp":"2024-05-29 14:16:34.705","message":"Kula 8 ruszyla sie na pozycje 200; 253"}
+,
+{"timestamp":"2024-05-29 14:16:34.750","message":"Kula 3 ruszyla sie na pozycje 484; 55"}
+,
+{"timestamp":"2024-05-29 14:16:34.750","message":"Kula 4 ruszyla sie na pozycje 176; 35"}
+,
+{"timestamp":"2024-05-29 14:16:34.750","message":"Kula 5 ruszyla sie na pozycje 258; 173"}
+,
+{"timestamp":"2024-05-29 14:16:34.750","message":"Kula 0 ruszyla sie na pozycje 295; 255"}
+,
+{"timestamp":"2024-05-29 14:16:34.750","message":"Kula 2 ruszyla sie na pozycje 24; 181"}
+,
+{"timestamp":"2024-05-29 14:16:34.750","message":"Kula 1 ruszyla sie na pozycje 569; 51"}
+,
+{"timestamp":"2024-05-29 14:16:34.750","message":"Kula 6 ruszyla sie na pozycje 440; 107"}
+,
+{"timestamp":"2024-05-29 14:16:34.755","message":"Kula 8 ruszyla sie na pozycje 195; 253"}
+,
+{"timestamp":"2024-05-29 14:16:34.755","message":"Kula 7 ruszyla sie na pozycje 368,31034482758633; 178,27586206896555"}
+,
+{"timestamp":"2024-05-29 14:16:34.755","message":"Kula 9 ruszyla sie na pozycje 389,68965517241367; 113,72413793103445"}
+,
+{"timestamp":"2024-05-29 14:16:34.801","message":"Kula 2 ruszyla sie na pozycje 24; 177"}
+,
+{"timestamp":"2024-05-29 14:16:34.801","message":"Kula 0 ruszyla sie na pozycje 290; 255"}
+,
+{"timestamp":"2024-05-29 14:16:34.801","message":"Kula 6 ruszyla sie na pozycje 444; 107"}
+,
+{"timestamp":"2024-05-29 14:16:34.801","message":"Kula 5 ruszyla sie na pozycje 263; 173"}
+,
+{"timestamp":"2024-05-29 14:16:34.801","message":"Kula 1 ruszyla sie na pozycje 573; 51"}
+,
+{"timestamp":"2024-05-29 14:16:34.801","message":"Kula 4 ruszyla sie na pozycje 180; 31"}
+,
+{"timestamp":"2024-05-29 14:16:34.801","message":"Kula 3 ruszyla sie na pozycje 488; 51"}
+,
+{"timestamp":"2024-05-29 14:16:34.806","message":"Kula 8 ruszyla sie na pozycje 190; 253"}
+,
+{"timestamp":"2024-05-29 14:16:34.806","message":"Kula 9 ruszyla sie na pozycje 389,8275862068964; 108,06896551724134"}
+,
+{"timestamp":"2024-05-29 14:16:34.806","message":"Kula 7 ruszyla sie na pozycje 368,1724137931036; 183,93103448275866"}
+,
+{"timestamp":"2024-05-29 14:16:34.851","message":"Kula 3 ruszyla sie na pozycje 492; 47"}
+,
+{"timestamp":"2024-05-29 14:16:34.851","message":"Kula 4 ruszyla sie na pozycje 184; 27"}
+,
+{"timestamp":"2024-05-29 14:16:34.851","message":"Kula 5 ruszyla sie na pozycje 268; 173"}
+,
+{"timestamp":"2024-05-29 14:16:34.851","message":"Kula 1 ruszyla sie na pozycje 568; 51"}
+,
+{"timestamp":"2024-05-29 14:16:34.851","message":"Kula 2 ruszyla sie na pozycje 24; 173"}
+,
+{"timestamp":"2024-05-29 14:16:34.851","message":"Kula 6 ruszyla sie na pozycje 448; 107"}
+,
+{"timestamp":"2024-05-29 14:16:34.851","message":"Kula 0 ruszyla sie na pozycje 285; 255"}
+,
+{"timestamp":"2024-05-29 14:16:34.857","message":"Kula 8 ruszyla sie na pozycje 185; 253"}
+,
+{"timestamp":"2024-05-29 14:16:34.857","message":"Kula 7 ruszyla sie na pozycje 368,03448275862087; 189,58620689655177"}
+,
+{"timestamp":"2024-05-29 14:16:34.857","message":"Kula 9 ruszyla sie na pozycje 389,96551724137913; 102,41379310344823"}
+,
+{"timestamp":"2024-05-29 14:16:34.902","message":"Kula 4 ruszyla sie na pozycje 188; 23"}
+,
+{"timestamp":"2024-05-29 14:16:34.902","message":"Kula 1 ruszyla sie na pozycje 563; 51"}
+,
+{"timestamp":"2024-05-29 14:16:34.902","message":"Kula 6 ruszyla sie na pozycje 452; 107"}
+,
+{"timestamp":"2024-05-29 14:16:34.902","message":"Kula 2 ruszyla sie na pozycje 24; 169"}
+,
+{"timestamp":"2024-05-29 14:16:34.902","message":"Kula 0 ruszyla sie na pozycje 280; 255"}
+,
+{"timestamp":"2024-05-29 14:16:34.902","message":"Kula 3 ruszyla sie na pozycje 496; 43"}
+,
+{"timestamp":"2024-05-29 14:16:34.902","message":"Kula 5 ruszyla sie na pozycje 273; 173"}
+,
+{"timestamp":"2024-05-29 14:16:34.908","message":"Kula 8 ruszyla sie na pozycje 180; 253"}
+,
+{"timestamp":"2024-05-29 14:16:34.908","message":"Kula 9 ruszyla sie na pozycje 390,10344827586187; 96,75862068965512"}
+,
+{"timestamp":"2024-05-29 14:16:34.908","message":"Kula 7 ruszyla sie na pozycje 367,89655172413813; 195,24137931034488"}
+,
+{"timestamp":"2024-05-29 14:16:34.952","message":"Kula 2 ruszyla sie na pozycje 24; 165"}
+,
+{"timestamp":"2024-05-29 14:16:34.952","message":"Kula 0 ruszyla sie na pozycje 275; 255"}
+,
+{"timestamp":"2024-05-29 14:16:34.952","message":"Kula 1 ruszyla sie na pozycje 558; 51"}
+,
+{"timestamp":"2024-05-29 14:16:34.952","message":"Kula 3 ruszyla sie na pozycje 500; 39"}
+,
+{"timestamp":"2024-05-29 14:16:34.952","message":"Kula 5 ruszyla sie na pozycje 278; 173"}
+,
+{"timestamp":"2024-05-29 14:16:34.952","message":"Kula 6 ruszyla sie na pozycje 456; 107"}
+,
+{"timestamp":"2024-05-29 14:16:34.952","message":"Kula 4 ruszyla sie na pozycje 192; 19"}
+,
+{"timestamp":"2024-05-29 14:16:34.959","message":"Kula 8 ruszyla sie na pozycje 175; 253"}
+,
+{"timestamp":"2024-05-29 14:16:34.959","message":"Kula 9 ruszyla sie na pozycje 390,2413793103446; 91,10344827586201"}
+,
+{"timestamp":"2024-05-29 14:16:34.959","message":"Kula 7 ruszyla sie na pozycje 367,7586206896554; 200,896551724138"}
+,
+{"timestamp":"2024-05-29 14:16:35.002","message":"Kula 0 ruszyla sie na pozycje 270; 255"}
+,
+{"timestamp":"2024-05-29 14:16:35.002","message":"Kula 2 ruszyla sie na pozycje 24; 161"}
+,
+{"timestamp":"2024-05-29 14:16:35.002","message":"Kula 1 ruszyla sie na pozycje 553; 51"}
+,
+{"timestamp":"2024-05-29 14:16:35.002","message":"Kula 3 ruszyla sie na pozycje 504; 35"}
+,
+{"timestamp":"2024-05-29 14:16:35.002","message":"Kula 4 ruszyla sie na pozycje 196; 15"}
+,
+{"timestamp":"2024-05-29 14:16:35.002","message":"Kula 5 ruszyla sie na pozycje 283; 173"}
+,
+{"timestamp":"2024-05-29 14:16:35.002","message":"Kula 6 ruszyla sie na pozycje 460; 107"}
+,
+{"timestamp":"2024-05-29 14:16:35.010","message":"Kula 8 ruszyla sie na pozycje 170; 253"}
+,
+{"timestamp":"2024-05-29 14:16:35.010","message":"Kula 7 ruszyla sie na pozycje 367,62068965517267; 206,5517241379311"}
+,
+{"timestamp":"2024-05-29 14:16:35.010","message":"Kula 9 ruszyla sie na pozycje 390,37931034482733; 85,4482758620689"}
+,
+{"timestamp":"2024-05-29 14:16:35.053","message":"Kula 5 ruszyla sie na pozycje 288; 173"}
+,
+{"timestamp":"2024-05-29 14:16:35.053","message":"Kula 0 ruszyla sie na pozycje 265; 255"}
+,
+{"timestamp":"2024-05-29 14:16:35.053","message":"Kula 4 ruszyla sie na pozycje 200; 11"}
+,
+{"timestamp":"2024-05-29 14:16:35.053","message":"Kula 6 ruszyla sie na pozycje 464; 107"}
+,
+{"timestamp":"2024-05-29 14:16:35.053","message":"Kula 3 ruszyla sie na pozycje 508; 31"}
+,
+{"timestamp":"2024-05-29 14:16:35.053","message":"Kula 1 ruszyla sie na pozycje 548; 51"}
+,
+{"timestamp":"2024-05-29 14:16:35.053","message":"Kula 2 ruszyla sie na pozycje 24; 157"}
+,
+{"timestamp":"2024-05-29 14:16:35.061","message":"Kula 9 ruszyla sie na pozycje 390,51724137931006; 79,79310344827579"}
+,
+{"timestamp":"2024-05-29 14:16:35.061","message":"Kula 8 ruszyla sie na pozycje 165; 253"}
+,
+{"timestamp":"2024-05-29 14:16:35.061","message":"Kula 7 ruszyla sie na pozycje 367,48275862068994; 212,2068965517242"}
+,
+{"timestamp":"2024-05-29 14:16:35.103","message":"Kula 2 ruszyla sie na pozycje 24; 153"}
+,
+{"timestamp":"2024-05-29 14:16:35.103","message":"Kula 6 ruszyla sie na pozycje 468; 107"}
+,
+{"timestamp":"2024-05-29 14:16:35.103","message":"Kula 1 ruszyla sie na pozycje 543; 51"}
+,
+{"timestamp":"2024-05-29 14:16:35.103","message":"Kula 0 ruszyla sie na pozycje 260; 255"}
+,
+{"timestamp":"2024-05-29 14:16:35.103","message":"Kula 3 ruszyla sie na pozycje 512; 27"}
+,
+{"timestamp":"2024-05-29 14:16:35.103","message":"Kula 4 ruszyla sie na pozycje 204; 7"}
+,
+{"timestamp":"2024-05-29 14:16:35.103","message":"Kula 5 ruszyla sie na pozycje 293; 173"}
+,
+{"timestamp":"2024-05-29 14:16:35.111","message":"Kula 7 ruszyla sie na pozycje 367,3448275862072; 217,86206896551732"}
+,
+{"timestamp":"2024-05-29 14:16:35.111","message":"Kula 8 ruszyla sie na pozycje 160; 253"}
+,
+{"timestamp":"2024-05-29 14:16:35.111","message":"Kula 9 ruszyla sie na pozycje 390,6551724137928; 74,13793103448268"}
+,
+{"timestamp":"2024-05-29 14:16:35.154","message":"Kula 2 ruszyla sie na pozycje 24; 149"}
+,
+{"timestamp":"2024-05-29 14:16:35.154","message":"Kula 1 ruszyla sie na pozycje 538; 51"}
+,
+{"timestamp":"2024-05-29 14:16:35.154","message":"Kula 4 ruszyla sie na pozycje 208; 3"}
+,
+{"timestamp":"2024-05-29 14:16:35.154","message":"Kula 3 ruszyla sie na pozycje 516; 23"}
+,
+{"timestamp":"2024-05-29 14:16:35.154","message":"Kula 5 ruszyla sie na pozycje 298; 173"}
+,
+{"timestamp":"2024-05-29 14:16:35.154","message":"Kula 6 ruszyla sie na pozycje 472; 107"}
+,
+{"timestamp":"2024-05-29 14:16:35.154","message":"Kula 0 ruszyla sie na pozycje 255; 255"}
+,
+{"timestamp":"2024-05-29 14:16:35.162","message":"Kula 8 ruszyla sie na pozycje 155; 253"}
+,
+{"timestamp":"2024-05-29 14:16:35.162","message":"Kula 9 ruszyla sie na pozycje 390,79310344827553; 68,48275862068957"}
+,
+{"timestamp":"2024-05-29 14:16:35.162","message":"Kula 7 ruszyla sie na pozycje 367,20689655172447; 223,51724137931043"}
+,
+{"timestamp":"2024-05-29 14:16:35.204","message":"Kula 0 ruszyla sie na pozycje 250; 255"}
+,
+{"timestamp":"2024-05-29 14:16:35.204","message":"Kula 3 ruszyla sie na pozycje 520; 19"}
+,
+{"timestamp":"2024-05-29 14:16:35.204","message":"Kula 1 ruszyla sie na pozycje 533; 51"}
+,
+{"timestamp":"2024-05-29 14:16:35.204","message":"Kula 2 ruszyla sie na pozycje 24; 145"}
+,
+{"timestamp":"2024-05-29 14:16:35.204","message":"Kula 6 ruszyla sie na pozycje 476; 107"}
+,
+{"timestamp":"2024-05-29 14:16:35.204","message":"Kula 5 ruszyla sie na pozycje 303; 173"}
+,
+{"timestamp":"2024-05-29 14:16:35.204","message":"Kula 4 ruszyla sie na pozycje 212; 0"}
+,
+{"timestamp":"2024-05-29 14:16:35.213","message":"Kula 9 ruszyla sie na pozycje 390,93103448275826; 62,82758620689646"}
+,
+{"timestamp":"2024-05-29 14:16:35.213","message":"Kula 7 ruszyla sie na pozycje 367,06896551724174; 229,17241379310354"}
+,
+{"timestamp":"2024-05-29 14:16:35.213","message":"Kula 8 ruszyla sie na pozycje 150; 253"}
+,
+{"timestamp":"2024-05-29 14:16:35.254","message":"Kula 6 ruszyla sie na pozycje 480; 107"}
+,
+{"timestamp":"2024-05-29 14:16:35.254","message":"Kula 4 ruszyla sie na pozycje 216; 4"}
+,
+{"timestamp":"2024-05-29 14:16:35.254","message":"Kula 0 ruszyla sie na pozycje 245; 255"}
+,
+{"timestamp":"2024-05-29 14:16:35.254","message":"Kula 2 ruszyla sie na pozycje 24; 141"}
+,
+{"timestamp":"2024-05-29 14:16:35.254","message":"Kula 5 ruszyla sie na pozycje 308; 173"}
+,
+{"timestamp":"2024-05-29 14:16:35.254","message":"Kula 1 ruszyla sie na pozycje 528; 51"}
+,
+{"timestamp":"2024-05-29 14:16:35.254","message":"Kula 3 ruszyla sie na pozycje 524; 15"}
+,
+{"timestamp":"2024-05-29 14:16:35.264","message":"Kula 8 ruszyla sie na pozycje 145; 253"}
+,
+{"timestamp":"2024-05-29 14:16:35.264","message":"Kula 9 ruszyla sie na pozycje 391,068965517241; 57,17241379310336"}
+,
+{"timestamp":"2024-05-29 14:16:35.264","message":"Kula 7 ruszyla sie na pozycje 366,931034482759; 234,82758620689665"}
+,
+{"timestamp":"2024-05-29 14:16:35.305","message":"Kula 3 ruszyla sie na pozycje 528; 11"}
+,
+{"timestamp":"2024-05-29 14:16:35.305","message":"Kula 2 ruszyla sie na pozycje 24; 137"}
+,
+{"timestamp":"2024-05-29 14:16:35.305","message":"Kula 5 ruszyla sie na pozycje 313; 173"}
+,
+{"timestamp":"2024-05-29 14:16:35.305","message":"Kula 1 ruszyla sie na pozycje 523; 51"}
+,
+{"timestamp":"2024-05-29 14:16:35.305","message":"Kula 6 ruszyla sie na pozycje 484; 107"}
+,
+{"timestamp":"2024-05-29 14:16:35.305","message":"Kula 4 ruszyla sie na pozycje 220; 8"}
+,
+{"timestamp":"2024-05-29 14:16:35.305","message":"Kula 0 ruszyla sie na pozycje 240; 255"}
+,
+{"timestamp":"2024-05-29 14:16:35.315","message":"Kula 8 ruszyla sie na pozycje 140; 253"}
+,
+{"timestamp":"2024-05-29 14:16:35.315","message":"Kula 7 ruszyla sie na pozycje 366,79310344827627; 240,48275862068976"}
+,
+{"timestamp":"2024-05-29 14:16:35.315","message":"Kula 9 ruszyla sie na pozycje 391,20689655172373; 51,517241379310256"}
+,
+{"timestamp":"2024-05-29 14:16:35.356","message":"Kula 0 ruszyla sie na pozycje 235; 255"}
+,
+{"timestamp":"2024-05-29 14:16:35.356","message":"Kula 5 ruszyla sie na pozycje 318; 173"}
+,
+{"timestamp":"2024-05-29 14:16:35.356","message":"Kula 4 ruszyla sie na pozycje 224; 12"}
+,
+{"timestamp":"2024-05-29 14:16:35.356","message":"Kula 1 ruszyla sie na pozycje 518; 51"}
+,
+{"timestamp":"2024-05-29 14:16:35.356","message":"Kula 6 ruszyla sie na pozycje 488; 107"}
+,
+{"timestamp":"2024-05-29 14:16:35.356","message":"Kula 2 ruszyla sie na pozycje 24; 133"}
+,
+{"timestamp":"2024-05-29 14:16:35.356","message":"Kula 3 ruszyla sie na pozycje 532; 7"}
+,
+{"timestamp":"2024-05-29 14:16:35.365","message":"Kula 8 ruszyla sie na pozycje 135; 253"}
+,
+{"timestamp":"2024-05-29 14:16:35.365","message":"Kula 7 ruszyla sie na pozycje 366,65517241379354; 246,13793103448288"}
+,
+{"timestamp":"2024-05-29 14:16:35.365","message":"Kula 9 ruszyla sie na pozycje 391,34482758620646; 45,86206896551715"}
+,
+{"timestamp":"2024-05-29 14:16:35.407","message":"Kula 1 ruszyla sie na pozycje 513; 51"}
+,
+{"timestamp":"2024-05-29 14:16:35.407","message":"Kula 3 ruszyla sie na pozycje 536; 3"}
+,
+{"timestamp":"2024-05-29 14:16:35.407","message":"Kula 4 ruszyla sie na pozycje 228; 16"}
+,
+{"timestamp":"2024-05-29 14:16:35.407","message":"Kula 6 ruszyla sie na pozycje 492; 107"}
+,
+{"timestamp":"2024-05-29 14:16:35.407","message":"Kula 5 ruszyla sie na pozycje 323; 173"}
+,
+{"timestamp":"2024-05-29 14:16:35.407","message":"Kula 2 ruszyla sie na pozycje 24; 129"}
+,
+{"timestamp":"2024-05-29 14:16:35.407","message":"Kula 0 ruszyla sie na pozycje 230; 255"}
+,
+{"timestamp":"2024-05-29 14:16:35.416","message":"Kula 8 ruszyla sie na pozycje 130; 253"}
+,
+{"timestamp":"2024-05-29 14:16:35.416","message":"Kula 7 ruszyla sie na pozycje 366,5172413793108; 251,79310344827599"}
+,
+{"timestamp":"2024-05-29 14:16:35.416","message":"Kula 9 ruszyla sie na pozycje 391,4827586206892; 40,20689655172405"}
+,
+{"timestamp":"2024-05-29 14:16:35.458","message":"Kula 3 ruszyla sie na pozycje 540; 0"}
+,
+{"timestamp":"2024-05-29 14:16:35.458","message":"Kula 0 ruszyla sie na pozycje 225; 255"}
+,
+{"timestamp":"2024-05-29 14:16:35.458","message":"Kula 2 ruszyla sie na pozycje 24; 125"}
+,
+{"timestamp":"2024-05-29 14:16:35.458","message":"Kula 5 ruszyla sie na pozycje 328; 173"}
+,
+{"timestamp":"2024-05-29 14:16:35.458","message":"Kula 6 ruszyla sie na pozycje 496; 107"}
+,
+{"timestamp":"2024-05-29 14:16:35.457","message":"Kula 4 ruszyla sie na pozycje 232; 20"}
+,
+{"timestamp":"2024-05-29 14:16:35.457","message":"Kula 1 ruszyla sie na pozycje 508; 51"}
+,
+{"timestamp":"2024-05-29 14:16:35.467","message":"Kula 8 ruszyla sie na pozycje 125; 253"}
+,
+{"timestamp":"2024-05-29 14:16:35.467","message":"Kula 7 ruszyla sie na pozycje 366,37931034482807; 257,44827586206907"}
+,
+{"timestamp":"2024-05-29 14:16:35.467","message":"Kula 9 ruszyla sie na pozycje 391,62068965517193; 34,55172413793095"}
+,
+{"timestamp":"2024-05-29 14:16:35.508","message":"Kula 1 ruszyla sie na pozycje 503; 51"}
+,
+{"timestamp":"2024-05-29 14:16:35.508","message":"Kula 5 ruszyla sie na pozycje 333; 173"}
+,
+{"timestamp":"2024-05-29 14:16:35.508","message":"Kula 4 ruszyla sie na pozycje 236; 24"}
+,
+{"timestamp":"2024-05-29 14:16:35.508","message":"Kula 6 ruszyla sie na pozycje 500; 107"}
+,
+{"timestamp":"2024-05-29 14:16:35.508","message":"Kula 3 ruszyla sie na pozycje 544; 4"}
+,
+{"timestamp":"2024-05-29 14:16:35.508","message":"Kula 2 ruszyla sie na pozycje 24; 121"}
+,
+{"timestamp":"2024-05-29 14:16:35.508","message":"Kula 0 ruszyla sie na pozycje 220; 255"}
+,
+{"timestamp":"2024-05-29 14:16:35.518","message":"Kula 8 ruszyla sie na pozycje 120; 253"}
+,
+{"timestamp":"2024-05-29 14:16:35.518","message":"Kula 7 ruszyla sie na pozycje 366,24137931034534; 263,10344827586215"}
+,
+{"timestamp":"2024-05-29 14:16:35.518","message":"Kula 9 ruszyla sie na pozycje 391,75862068965466; 28,896551724137844"}
+,
+{"timestamp":"2024-05-29 14:16:35.558","message":"Kula 0 ruszyla sie na pozycje 215; 255"}
+,
+{"timestamp":"2024-05-29 14:16:35.558","message":"Kula 3 ruszyla sie na pozycje 548; 8"}
+,
+{"timestamp":"2024-05-29 14:16:35.558","message":"Kula 4 ruszyla sie na pozycje 240; 28"}
+,
+{"timestamp":"2024-05-29 14:16:35.558","message":"Kula 1 ruszyla sie na pozycje 498; 51"}
+,
+{"timestamp":"2024-05-29 14:16:35.558","message":"Kula 6 ruszyla sie na pozycje 504; 107"}
+,
+{"timestamp":"2024-05-29 14:16:35.558","message":"Kula 5 ruszyla sie na pozycje 338; 173"}
+,
+{"timestamp":"2024-05-29 14:16:35.558","message":"Kula 2 ruszyla sie na pozycje 24; 117"}
+,
+{"timestamp":"2024-05-29 14:16:35.569","message":"Kula 8 ruszyla sie na pozycje 115; 253"}
+,
+{"timestamp":"2024-05-29 14:16:35.569","message":"Kula 7 ruszyla sie na pozycje 366,1034482758626; 268,75862068965523"}
+,
+{"timestamp":"2024-05-29 14:16:35.569","message":"Kula 9 ruszyla sie na pozycje 391,8965517241374; 23,24137931034474"}
+,
+{"timestamp":"2024-05-29 14:16:35.609","message":"Kula 4 ruszyla sie na pozycje 244; 32"}
+,
+{"timestamp":"2024-05-29 14:16:35.609","message":"Kula 1 ruszyla sie na pozycje 493; 51"}
+,
+{"timestamp":"2024-05-29 14:16:35.609","message":"Kula 6 ruszyla sie na pozycje 508; 107"}
+,
+{"timestamp":"2024-05-29 14:16:35.609","message":"Kula 5 ruszyla sie na pozycje 343; 173"}
+,
+{"timestamp":"2024-05-29 14:16:35.609","message":"Kula 0 ruszyla sie na pozycje 210; 255"}
+,
+{"timestamp":"2024-05-29 14:16:35.609","message":"Kula 2 ruszyla sie na pozycje 24; 113"}
+,
+{"timestamp":"2024-05-29 14:16:35.609","message":"Kula 3 ruszyla sie na pozycje 552; 12"}
+,
+{"timestamp":"2024-05-29 14:16:35.620","message":"Kula 9 ruszyla sie na pozycje 392,03448275862013; 17,586206896551637"}
+,
+{"timestamp":"2024-05-29 14:16:35.620","message":"Kula 8 ruszyla sie na pozycje 110; 253"}
+,
+{"timestamp":"2024-05-29 14:16:35.620","message":"Kula 7 ruszyla sie na pozycje 365,96551724137987; 273"}
+,
+{"timestamp":"2024-05-29 14:16:35.660","message":"Kula 0 ruszyla sie na pozycje 205; 255"}
+,
+{"timestamp":"2024-05-29 14:16:35.660","message":"Kula 5 ruszyla sie na pozycje 348; 173"}
+,
+{"timestamp":"2024-05-29 14:16:35.660","message":"Kula 6 ruszyla sie na pozycje 512; 107"}
+,
+{"timestamp":"2024-05-29 14:16:35.660","message":"Kula 3 ruszyla sie na pozycje 556; 16"}
+,
+{"timestamp":"2024-05-29 14:16:35.660","message":"Kula 4 ruszyla sie na pozycje 248; 36"}
+,
+{"timestamp":"2024-05-29 14:16:35.660","message":"Kula 1 ruszyla sie na pozycje 488; 51"}
+,
+{"timestamp":"2024-05-29 14:16:35.660","message":"Kula 2 ruszyla sie na pozycje 24; 109"}
+,
+{"timestamp":"2024-05-29 14:16:35.671","message":"Kula 9 ruszyla sie na pozycje 392,17241379310286; 11,931034482758534"}
+,
+{"timestamp":"2024-05-29 14:16:35.671","message":"Kula 7 ruszyla sie na pozycje 365,82758620689714; 267,3448275862069"}
+,
+{"timestamp":"2024-05-29 14:16:35.671","message":"Kula 8 ruszyla sie na pozycje 105; 253"}
+,
+{"timestamp":"2024-05-29 14:16:35.710","message":"Kula 0 ruszyla sie na pozycje 200; 255"}
+,
+{"timestamp":"2024-05-29 14:16:35.710","message":"Kula 2 ruszyla sie na pozycje 24; 105"}
+,
+{"timestamp":"2024-05-29 14:16:35.710","message":"Kula 1 ruszyla sie na pozycje 483; 51"}
+,
+{"timestamp":"2024-05-29 14:16:35.710","message":"Kula 6 ruszyla sie na pozycje 516; 107"}
+,
+{"timestamp":"2024-05-29 14:16:35.710","message":"Kula 3 ruszyla sie na pozycje 560; 20"}
+,
+{"timestamp":"2024-05-29 14:16:35.710","message":"Kula 5 ruszyla sie na pozycje 353; 173"}
+,
+{"timestamp":"2024-05-29 14:16:35.710","message":"Kula 4 ruszyla sie na pozycje 252; 40"}
+,
+{"timestamp":"2024-05-29 14:16:35.722","message":"Kula 9 ruszyla sie na pozycje 392,3103448275856; 6,275862068965431"}
+,
+{"timestamp":"2024-05-29 14:16:35.722","message":"Kula 8 ruszyla sie na pozycje 100; 253"}
+,
+{"timestamp":"2024-05-29 14:16:35.722","message":"Kula 7 ruszyla sie na pozycje 365,6896551724144; 261,68965517241384"}
+,
+{"timestamp":"2024-05-29 14:16:35.760","message":"Kula 0 ruszyla sie na pozycje 195; 255"}
+,
+{"timestamp":"2024-05-29 14:16:35.760","message":"Kula 2 ruszyla sie na pozycje 24; 101"}
+,
+{"timestamp":"2024-05-29 14:16:35.760","message":"Kula 5 ruszyla sie na pozycje 358; 173"}
+,
+{"timestamp":"2024-05-29 14:16:35.760","message":"Kula 3 ruszyla sie na pozycje 564; 24"}
+,
+{"timestamp":"2024-05-29 14:16:35.760","message":"Kula 1 ruszyla sie na pozycje 478; 51"}
+,
+{"timestamp":"2024-05-29 14:16:35.760","message":"Kula 6 ruszyla sie na pozycje 520; 107"}
+,
+{"timestamp":"2024-05-29 14:16:35.760","message":"Kula 4 ruszyla sie na pozycje 256; 44"}
+]

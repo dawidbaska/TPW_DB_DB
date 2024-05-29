@@ -17,7 +17,7 @@ namespace Dane
         ConcurrentQueue<string> cq = new ConcurrentQueue<string>();
         private string filePath;
 
-        public void Dodaj_logi(string wiadomosc)
+        public void DodajLogi(string wiadomosc)
         {
             cq.Enqueue(wiadomosc);
         }
@@ -48,7 +48,8 @@ namespace Dane
         }
 
 
-        public void zapiszLogi() { 
+        public void zapiszLogi()
+        {
             if (cq.Count > 0)
             {
                 while (cq.TryDequeue(out string log))
@@ -58,8 +59,9 @@ namespace Dane
                     var logEntry = new { timestamp = timestamp, message = message };
                     string jsonLog = JsonSerializer.Serialize(logEntry);
                     using (StreamWriter file = new StreamWriter(filePath, true))
-                    {   FileInfo fileInfo = new FileInfo(filePath);
-                        if(fileInfo.Length == 0)
+                    {
+                        FileInfo fileInfo = new FileInfo(filePath);
+                        if (fileInfo.Length == 0)
                         {
                             file.WriteLine("[");
                         }
@@ -76,13 +78,14 @@ namespace Dane
         public void koniecZapisow()
         {
             using (StreamWriter file = new StreamWriter(filePath, true))
-            {   while(cq.Count > 0)
+            {
+                while (cq.Count > 0)
                 {
                     zapiszLogi();
                 }
                 file.WriteLine("]");
             }
         }
-       
+
     }
 }

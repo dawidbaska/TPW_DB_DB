@@ -12,7 +12,7 @@ namespace Dane
 
         public override void DodajLogi(string wiadomosc)
         {
-            this.logger.Dodaj_logi(wiadomosc);
+            this.logger.DodajLogi(wiadomosc);
         }
 
         public override void KoniecZapisow()
@@ -27,7 +27,7 @@ namespace Dane
 
         public override void LoggerStworz(string filePath)
         {
-           this.logger = new Logger(filePath);
+            this.logger = new Logger(filePath);
         }
 
         public override Plansza PlanszaStworz()
