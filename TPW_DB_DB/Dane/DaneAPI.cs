@@ -17,11 +17,7 @@ namespace Dane
         public abstract Plansza PlanszaStworz();
         public abstract void LoggerStworz(string filePath);
 
-        public abstract void ZapiszLogi();
-
-        public abstract void DodajLogi(string wiadomosc);
-
-        public abstract void KoniecZapisow();
+        public abstract void ZapiszLogi(string data_czas, string wiadomosc);
     }
 
 }

@@ -10,14 +10,13 @@ namespace Logika
     {
         private List<Dane.Kula> lista = new List<Dane.Kula> { };
         private Dane.DaneAPI daneapi;
+        private Timer timer;
 
         public Logika(DaneAPI daneapi)
         {
             this.daneapi = daneapi;
+            this.timer = new Timer(ZapiszLogi, null, 10000, 5000);
         }
-
-
-
 
         public override void LosujNowaPozycja(int x1, int x2, int y1, int y2, int i)
         {
@@ -55,8 +54,6 @@ namespace Logika
                 this.lista.ElementAt(i).X = x2;
             else
                 this.lista.ElementAt(i).X += ruchx;
-            string wiadomosc = $"{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff")}: Kula {i} ruszyla sie na pozycje {this.lista.ElementAt(i).X}; {this.lista.ElementAt(i).Y}";
-            DodajLogi(wiadomosc);
             SprawdzKolizje(i, this.lista);
 
         }
@@ -95,9 +92,7 @@ namespace Logika
                                 this.lista.ElementAt(i).Wektor_Y -= nowyY;
                                 this.lista.ElementAt(j).Wektor_X += nowyX;
                                 this.lista.ElementAt(j).Wektor_Y += nowyY;
-                                string wiadomosc = $"{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff")}: Kula {i} zderzyla sie z kula {j}";
-                                DodajLogi(wiadomosc);
-
+                             
                             }
                         }
                     }
@@ -125,8 +120,6 @@ namespace Logika
                     }
                 }
             }
-            string wiadomosc = $"{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff")}: Kula {i} zostala stworzona na pozycjach {this.lista.ElementAt(i).X}; {this.lista.ElementAt(i).Y}";
-            DodajLogi(wiadomosc);
         }
 
         public override void DodajKula(double predkosc, int srednica, double waga)
@@ -166,19 +159,17 @@ namespace Logika
             this.daneapi.LoggerStworz(filePath);
         }
 
-        public override void DodajLogi(string wiadomosc)
+
+        public override void ZapiszLogi(object? state)
         {
-            this.daneapi.DodajLogi(wiadomosc);
+            DateTime data_czas = DateTime.Now;
+            string wiadomosc="";
+            string data_czas_string = data_czas.ToString("yyyy-MM-dd_HH-mm-ss");
+            for (int i =0; i< this.lista.Count; i++) {
+                wiadomosc = $"Kula {i} ruszyla sie na pozycje {this.lista.ElementAt(i).X}; {this.lista.ElementAt(i).Y}";
+                this.daneapi.ZapiszLogi(data_czas_string, wiadomosc);
+            }
         }
 
-        public override void ZapiszLogi()
-        {
-            this.daneapi.ZapiszLogi();
-        }
-
-        public override void KoniecZapisow()
-        {
-           this.daneapi.KoniecZapisow();
-        }
     }
 }

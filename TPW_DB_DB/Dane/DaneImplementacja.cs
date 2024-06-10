@@ -10,15 +10,6 @@ namespace Dane
     {
         private Logger logger;
 
-        public override void DodajLogi(string wiadomosc)
-        {
-            this.logger.Dodaj_logi(wiadomosc);
-        }
-
-        public override void KoniecZapisow()
-        {
-            this.logger.koniecZapisow();
-        }
 
         public override Kula KulaStworz(double predkosc, int srednica, double waga)
         {
@@ -35,9 +26,9 @@ namespace Dane
             return new Plansza();
         }
 
-        public override void ZapiszLogi()
+        public override void ZapiszLogi(string data_czas, string wiadomosc)
         {
-            this.logger.zapiszLogi();
+            this.logger.zapiszLogi(data_czas, wiadomosc);
         }
     }
 }

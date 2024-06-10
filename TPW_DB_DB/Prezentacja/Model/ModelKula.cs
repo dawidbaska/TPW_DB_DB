@@ -38,19 +38,6 @@ namespace Prezentacja.Model
             string data_czas_string = data_czas.ToString("yyyy-MM-dd_HH-mm-ss");
             string nazwaPliku = $"{data_czas_string}.json";
             this.logika.stworzLogger(nazwaPliku);
-            ZapiszLogi();
-        }
-
-        public void ZapiszLogi()
-        {
-            Task logowanie = Task.Run(() =>
-            {
-                while (!cancellationTokenSource.Token.IsCancellationRequested)
-                {
-                    this.logika.ZapiszLogi();
-                }
-                this.logika.KoniecZapisow();
-            });
         }
 
         public void tworzenie(ObservableCollection<Dane.Kula> KulePositions)

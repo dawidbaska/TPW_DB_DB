@@ -14,13 +14,7 @@ namespace Dane
 {
     public class Logger
     {
-        ConcurrentQueue<string> cq = new ConcurrentQueue<string>();
         private string filePath;
-
-        public void Dodaj_logi(string wiadomosc)
-        {
-            cq.Enqueue(wiadomosc);
-        }
 
         public Logger(string filePath)
         {
@@ -48,41 +42,35 @@ namespace Dane
         }
 
 
-        public void zapiszLogi() { 
-            if (cq.Count > 0)
+        public void zapiszLogi(string data_czas, string wiadomosc)
+        {
+            string dane = "";
+            if (File.Exists(this.filePath))
             {
-                while (cq.TryDequeue(out string log))
+                dane = File.ReadAllText(this.filePath);
+                if (dane.Length > 0)
                 {
-                    string timestamp = log.Substring(0, 23);
-                    string message = log.Substring(25);
-                    var logEntry = new { timestamp = timestamp, message = message };
-                    string jsonLog = JsonSerializer.Serialize(logEntry);
-                    using (StreamWriter file = new StreamWriter(filePath, true))
-                    {   FileInfo fileInfo = new FileInfo(filePath);
-                        if(fileInfo.Length == 0)
-                        {
-                            file.WriteLine("[");
-                        }
-                        if (fileInfo.Length > 2)
-                        {
-                            file.WriteLine(",");
-                        }
-                        file.WriteLine(jsonLog);
-                    }
+                    dane = dane.Remove(dane.Length - 3);
+                    Debug.WriteLine(dane);
+                    File.WriteAllText(this.filePath, dane);
                 }
             }
-        }
-
-        public void koniecZapisow()
-        {
+            var logEntry = new { timestamp = data_czas, message = wiadomosc };
+            string jsonLog = JsonSerializer.Serialize(logEntry);
             using (StreamWriter file = new StreamWriter(filePath, true))
-            {   while(cq.Count > 0)
+            {
+                FileInfo fileInfo = new FileInfo(filePath);
+                if (fileInfo.Length == 0)
                 {
-                    zapiszLogi();
+                    file.WriteLine("[");
                 }
+                if (fileInfo.Length > 2)
+                {
+                    file.WriteLine(",");
+                }
+                file.WriteLine(jsonLog);
                 file.WriteLine("]");
             }
         }
-       
     }
 }

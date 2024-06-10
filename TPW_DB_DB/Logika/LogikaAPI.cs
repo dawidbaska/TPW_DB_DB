@@ -24,10 +24,6 @@ namespace Logika
 
         public abstract void stworzLogger(string filePath);
 
-        public abstract void DodajLogi(string wiadomosc);
-
-        public abstract void ZapiszLogi();
-
-        public abstract void KoniecZapisow();
+        public abstract void ZapiszLogi(object? state);
     }
 }
