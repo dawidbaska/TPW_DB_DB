@@ -7,7 +7,7 @@ namespace TestDane
         public void TestKulaSetGet()
         {
             Dane.Kula kula = new Dane.Kula(10,20,5);
-            
+       
             kula.X = 1;
             kula.Y = 2;
             kula.Wektor_X = 0;
