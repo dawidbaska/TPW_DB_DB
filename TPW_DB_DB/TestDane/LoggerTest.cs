@@ -20,13 +20,12 @@ namespace TestDane
             }
 
             Dane.Logger logger = new Dane.Logger("test_log2.json");
-            string wiadomosc = "2024-05-29 10:00:00.000: abcd";
-            logger.DodajLogi(wiadomosc);
-            logger.zapiszLogi();
-            logger.koniecZapisow();
+
+            logger.zapiszLogi("2024-06-10_13-24-43", "abcd");
+
 
             string logContent = File.ReadAllText(cala);
-            Assert.IsTrue(logContent.Contains("\"timestamp\":\"2024-05-29 10:00:00.000\""));
+            Assert.IsTrue(logContent.Contains("\"timestamp\":\"2024-06-10_13-24-43\""));
             Assert.IsTrue(logContent.Contains("\"message\":\"abcd\""));
 
             File.Delete(cala);
