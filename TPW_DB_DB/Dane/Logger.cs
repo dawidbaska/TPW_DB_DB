@@ -51,7 +51,6 @@ namespace Dane
                 if (dane.Length > 0)
                 {
                     dane = dane.Remove(dane.Length - 3);
-                    Debug.WriteLine(dane);
                     File.WriteAllText(this.filePath, dane);
                 }
             }
